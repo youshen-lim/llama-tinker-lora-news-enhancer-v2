@@ -1,0 +1,885 @@
+[
+  {
+    "id": 0,
+    "example_id": 0,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 1,
+    "example_id": 1,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 2,
+    "example_id": 2,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 3,
+    "example_id": 3,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 4,
+    "example_id": 4,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 5,
+    "example_id": 5,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 6,
+    "example_id": 6,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 7,
+    "example_id": 7,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 8,
+    "example_id": 8,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 9,
+    "example_id": 9,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 10,
+    "example_id": 10,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 11,
+    "example_id": 11,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 12,
+    "example_id": 12,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 13,
+    "example_id": 13,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 14,
+    "example_id": 14,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 15,
+    "example_id": 15,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 16,
+    "example_id": 16,
+    "relevance_score": 8,
+    "key_insights": [
+      "This is a good example of a video prompt that is relevant to the user.",
+      "This is a good example of a video prompt that is relevant to the user.",
+      "This is a good example of a video prompt that is relevant to the user."
+    ],
+    "company_names": [],
+    "summary": "This is a good example of a video prompt that is relevant to the user.",
+    "is_valid_json": true
+  },
+  {
+    "id": 17,
+    "example_id": 17,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 18,
+    "example_id": 18,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 19,
+    "example_id": 19,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 20,
+    "example_id": 20,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 21,
+    "example_id": 21,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 22,
+    "example_id": 22,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 23,
+    "example_id": 23,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 24,
+    "example_id": 24,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 25,
+    "example_id": 25,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 26,
+    "example_id": 26,
+    "relevance_score": 9.0,
+    "key_insights": [
+      "SAM-Swin detects cancer with 90% accuracy.",
+      "SAM-Swin is trained on a dataset of 5,000 images of cancerous and non-cancerous tissue.",
+      "SAM-Swin uses advanced features from the Segment Anything Model 2 (SAM2).",
+      "SAM-Swin is an open-source model that is available for free download.",
+      "SAM-Swin is a scalable model that can be used for other applications."
+    ],
+    "company_names": [],
+    "summary": "SAM-Swin can detect cancer with 90% accuracy.",
+    "is_valid_json": true
+  },
+  {
+    "id": 27,
+    "example_id": 27,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 28,
+    "example_id": 28,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 29,
+    "example_id": 29,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 30,
+    "example_id": 30,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 31,
+    "example_id": 31,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 32,
+    "example_id": 32,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 33,
+    "example_id": 33,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 34,
+    "example_id": 34,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 35,
+    "example_id": 35,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 36,
+    "example_id": 36,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 37,
+    "example_id": 37,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 38,
+    "example_id": 38,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 39,
+    "example_id": 39,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 40,
+    "example_id": 40,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 41,
+    "example_id": 41,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 42,
+    "example_id": 42,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 43,
+    "example_id": 43,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 44,
+    "example_id": 44,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 45,
+    "example_id": 45,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 46,
+    "example_id": 46,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 47,
+    "example_id": 47,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 48,
+    "example_id": 48,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 49,
+    "example_id": 49,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 50,
+    "example_id": 50,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 51,
+    "example_id": 51,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 52,
+    "example_id": 52,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 53,
+    "example_id": 53,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 54,
+    "example_id": 54,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 55,
+    "example_id": 55,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 56,
+    "example_id": 56,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 57,
+    "example_id": 57,
+    "relevance_score": 1,
+    "key_insights": [
+      "This simulation platform uses a combination of text, images, and math to create 3D worlds that are able to teach robots to react to the world around them.",
+      "The simulation platform can be used to accelerate training for robots and improve safety for human workers."
+    ],
+    "company_names": [],
+    "summary": "A new platform for creating physics simulations has been created that accelerates robot training 430,000 times faster than real-world conditions using text-generated 3D worlds.",
+    "is_valid_json": true
+  },
+  {
+    "id": 58,
+    "example_id": 58,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 59,
+    "example_id": 59,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 60,
+    "example_id": 60,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 61,
+    "example_id": 61,
+    "relevance_score": 5,
+    "key_insights": [
+      "Use a clustering algorithm to group similar comments together and give them a relevance score.",
+      "Use a clustering algorithm to group similar comments together and give them a relevance score."
+    ],
+    "company_names": [],
+    "summary": "This is a great article on how to make LLMs shut up.",
+    "is_valid_json": true
+  },
+  {
+    "id": 62,
+    "example_id": 62,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 63,
+    "example_id": 63,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 64,
+    "example_id": 64,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 65,
+    "example_id": 65,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 66,
+    "example_id": 66,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 67,
+    "example_id": 67,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 68,
+    "example_id": 68,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 69,
+    "example_id": 69,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 70,
+    "example_id": 70,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 71,
+    "example_id": 71,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 72,
+    "example_id": 72,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 73,
+    "example_id": 73,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 74,
+    "example_id": 74,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 75,
+    "example_id": 75,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 76,
+    "example_id": 76,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 77,
+    "example_id": 77,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 78,
+    "example_id": 78,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 79,
+    "example_id": 79,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 80,
+    "example_id": 80,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 81,
+    "example_id": 81,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 82,
+    "example_id": 82,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 83,
+    "example_id": 83,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 84,
+    "example_id": 84,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 85,
+    "example_id": 85,
+    "relevance_score": 7,
+    "key_insights": [
+      "This is a library that has a known security issue that's been reported many times",
+      "The bug is likely to be fixed in the next release"
+    ],
+    "company_names": [],
+    "summary": "A security bug report on a third party library that is causing a security issue",
+    "is_valid_json": true
+  },
+  {
+    "id": 86,
+    "example_id": 86,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 87,
+    "example_id": 87,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 88,
+    "example_id": 88,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 89,
+    "example_id": 89,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 90,
+    "example_id": 90,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 91,
+    "example_id": 91,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 92,
+    "example_id": 92,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 93,
+    "example_id": 93,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 94,
+    "example_id": 94,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  },
+  {
+    "id": 95,
+    "example_id": 95,
+    "relevance_score": 0,
+    "key_insights": [],
+    "company_names": [],
+    "summary": "",
+    "is_valid_json": false
+  }
+]

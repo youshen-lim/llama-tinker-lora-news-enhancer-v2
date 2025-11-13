@@ -1,0 +1,6 @@
+{
+  "training_run_id": "82e76ebc-2dba-4407-9151-fc0491b04b17",
+  "captured_at": "2025-11-04T00:46:30.067063",
+  "model": "meta-llama/Llama-3.2-1B",
+  "framework": "Tinker API"
+}

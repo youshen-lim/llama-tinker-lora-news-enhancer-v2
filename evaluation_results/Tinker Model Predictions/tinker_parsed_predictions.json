@@ -1,0 +1,1612 @@
+[
+  {
+    "example_id": 0,
+    "prediction": {
+      "relevance_score": 9,
+      "summary": "",
+      "key_insights": [
+        "AI Infrastructure",
+        "AI Chip"
+      ],
+      "company_names": [
+        "Netflix",
+        "Broadcom",
+        "VMware"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 2,\n  \"summary\": \"\",\n  \"key_insights\": [],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 1,
+    "prediction": {
+      "relevance_score": 8,
+      "summary": "",
+      "key_insights": [
+        "AI Tool",
+        "AI Model",
+        "GitHub Repo"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 9,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Model\",\n    \"Domain AI\",\n    \"GitHub Repo\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 2,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "Google",
+        "Google AI",
+        "Company News",
+        "Product Announcement",
+        "Company Blog"
+      ],
+      "company_names": [
+        "Google"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Google\",\n    \"Google AI\",\n    \"Product Announcement\",\n    \"Company News\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 3,
+    "prediction": {
+      "relevance_score": 1,
+      "summary": "",
+      "key_insights": [],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 6,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Technology History\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 4,
+    "prediction": {
+      "relevance_score": 9,
+      "summary": "",
+      "key_insights": [
+        "AI Industry Report",
+        "AI Study",
+        "AI Blog"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Industry Report\",\n    \"AI Blog\",\n    \"AI Coding\",\n    \"Vibe Coding\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 5,
+    "prediction": {
+      "relevance_score": 8,
+      "summary": "",
+      "key_insights": [
+        "AI Economics"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 9,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Study\",\n    \"AI Technique\",\n    \"AI Research\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 6,
+    "prediction": {
+      "relevance_score": 2,
+      "summary": "",
+      "key_insights": [
+        "DevOps Guide"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 1,\n  \"summary\": \"Sponsored Ad\",\n  \"key_insights\": [],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 7,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "AI Tool",
+        "AI Technique",
+        "GitHub Repo"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 9,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Tool\",\n    \"GitHub Repo\",\n    \"PostgresSQL\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 8,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "OpenAI",
+        "OpenAI ChatGPT",
+        "Product Announcement",
+        "Company News"
+      ],
+      "company_names": [
+        "OpenAI"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"OpenAI\",\n    \"Product Annoucement\",\n    \"Company News\"\n  ],\n  \"company_names\": [\n    \"OpenAI\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 9,
+    "prediction": {
+      "relevance_score": 2,
+      "summary": "",
+      "key_insights": [
+        "Apple",
+        "AI Devices"
+      ],
+      "company_names": [
+        "Apple"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 7,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Apple\",\n    \"Virual Reality\",\n    \"Mixed Reality\",\n    \"Vision Pro\"\n  ],\n  \"company_names\": [\n    \"Apple\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 10,
+    "prediction": {
+      "relevance_score": 7,
+      "summary": "",
+      "key_insights": [
+        "AI Tool",
+        "GitHub Repo"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 8,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Guide\",\n    \"GitHub Repo\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 11,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "AI Model",
+        "Multimodal LLM",
+        "Hugging Face Repo"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 8,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Tool\",\n    \"AI Model\",\n    \"GitHub Repo\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 12,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "Microsoft",
+        "OpenAI",
+        "Market Competition"
+      ],
+      "company_names": [
+        "Microsoft",
+        "OpenAI"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Microsoft\",\n    \"OpenAI\",\n    \"Microsoft 365\",\n    \"Microsoft 365 Copilot\",\n    \"Market Competition\"\n  ],\n  \"company_names\": [\n    \"Microsoft\",\n    \"OpenAI\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 13,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "Non-AI News",
+        "AI Industry Report"
+      ],
+      "company_names": [
+        "Yuga Labs"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 1,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Non-AI News\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 14,
+    "prediction": {
+      "relevance_score": 1,
+      "summary": "",
+      "key_insights": [],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 7,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Guide\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 15,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "AI Research",
+        "AI Technique",
+        "Reasoning Model"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 9,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Research\",\n    \"AI Technique\",\n    \"Domain AI\",\n    \"Chain of Thought\",\n    \"CoT\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 16,
+    "prediction": {
+      "relevance_score": 9,
+      "summary": "",
+      "key_insights": [
+        "AI Technique",
+        "AI Blog"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 9,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Technique\",\n    \"AI Research\",\n    \"Video Model\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 17,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "AI Technique",
+        "AI Optimization",
+        "AI Study",
+        "Company Blog",
+        "SQLite"
+      ],
+      "company_names": [
+        "SQLite"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 2,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"DevOps Guide\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 18,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "OpenAI",
+        "OpenAI App",
+        "Product Announcement",
+        "Company News"
+      ],
+      "company_names": [
+        "OpenAI"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"OpenAI\",\n    \"Product Announcement\",\n    \"Company News\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 19,
+    "prediction": {
+      "relevance_score": 8,
+      "summary": "",
+      "key_insights": [
+        "AI Research"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 1,\n  \"summary\": \"Crypto\\nCrypto Token\\nBitcoin\",\n  \"key_insights\": [],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 20,
+    "prediction": {
+      "relevance_score": 9,
+      "summary": "",
+      "key_insights": [
+        "AI Technique",
+        "AI Tool",
+        "GitHub Repo"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 9,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Tool\",\n    \"AI Model\",\n    \"Diffusion Model\",\n    \"Image Model\",\n    \"GitHub Repo\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 21,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "Anthropic",
+        "AI Industry Report",
+        "AWS",
+        "Google Cloud"
+      ],
+      "company_names": [
+        "Anthropic",
+        "Google"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Industry Report\",\n    \"AI Study\",\n    \"Anthropic\",\n    \"Cursor\",\n    \"Amazon Web Services\",\n    \"AWS\",\n    \"AI Infrastructure\",\n    \"Google Cloud\",\n    \"AI Chip\"\n  ],\n  \"company_names\": [\n    \"Anthropic\",\n    \"Cursor\",\n    \"Amazon Web Services\",\n    \"AWS\",\n    \"Google Cloud\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 22,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "AI Technique",
+        "AI Model",
+        "Google",
+        "Google BERT"
+      ],
+      "company_names": [
+        "Google"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 9,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Model\",\n    \"AI Research\",\n    \"AI Tool\",\n    \"AI Technique\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 23,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "Anthropic",
+        "AI Study",
+        "AI Technique",
+        "AI Guide",
+        "AI Blog"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Anthropic\",\n    \"AI Study\",\n    \"AI Guide\",\n    \"AI Agent\"\n  ],\n  \"company_names\": [\n    \"Anthropic\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 24,
+    "prediction": {
+      "relevance_score": 1,
+      "summary": "",
+      "key_insights": [],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 1,\n  \"summary\": \"\",\n  \"key_insights\": [],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 25,
+    "prediction": {
+      "relevance_score": 2,
+      "summary": "",
+      "key_insights": [
+        "SpaceX",
+        "SpaceX Starlink",
+        "AI Infrastructure"
+      ],
+      "company_names": [
+        "SpaceX"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 7,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Space Travel\",\n    \"Space Exploration\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 26,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "AI Research",
+        "AI Model",
+        "Domain AI"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 8,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Tool\",\n    \"Open Source Model\",\n    \"GitHub Repo\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 27,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "World Labs",
+        "AI Tool",
+        "AI Technique",
+        "3D Model",
+        "Image AI"
+      ],
+      "company_names": [
+        "World Labs"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"World Labs\",\n    \"Fei-Fei Li\",\n    \"World Model\",\n    \"Product Announcement\",\n    \"Company News\"\n  ],\n  \"company_names\": [\n    \"World Labs\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 28,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "AI Tool",
+        "AI Technique",
+        "Domain AI",
+        "GitHub Repo"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 9,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Benchmark\",\n    \"AI Technique\",\n    \"Domain AI\",\n    \"GitHub Repo\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 29,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "AI Technique",
+        "AI Benchmark",
+        "Multimodal Agent",
+        "Product Announcement",
+        "Company News"
+      ],
+      "company_names": [
+        "MageBench"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 9,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Technique\",\n    \"AI Benchmark\",\n    \"MageBench\",\n    \"Microsoft MageBench\"\n  ],\n  \"company_names\": [\n    \"MageBench\",\n    \"Microsoft\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 30,
+    "prediction": {
+      "relevance_score": 8,
+      "summary": "",
+      "key_insights": [
+        "AI Technique",
+        "AI Optimization"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Technique\",\n    \"AI Research\",\n    \"AI Optimization\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 31,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "Anthropic",
+        "Anthropic Claude",
+        "AI Study",
+        "AI Guide"
+      ],
+      "company_names": [
+        "Anthropic"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Anthropic\",\n    \"Anthropic Claude\",\n    \"Anthropic Claude Code\",\n    \"Claude Code\",\n    \"Company Blog\",\n    \"Company News\"\n  ],\n  \"company_names\": [\n    \"Anthropic\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 32,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "Google",
+        "Google YouTube",
+        "AI Policy",
+        "AI Regulation"
+      ],
+      "company_names": [
+        "Google"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Google YouTube\",\n    \"YouTube\"\n  ],\n  \"company_names\": [\n    \"Google\",\n    \"YouTube\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 33,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "Hugging Face",
+        "Hugging Face Hub",
+        "Reasoning Model",
+        "DeepThought"
+      ],
+      "company_names": [
+        "Hugging Face"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 8,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Tool\",\n    \"AI Model\",\n    \"Reasoning Model\",\n    \"Hugging Face Repo\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 34,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "Anthropic",
+        "Anthropic Claude",
+        "Product Announcement",
+        "Company News"
+      ],
+      "company_names": [
+        "Anthropic"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Anthropic\",\n    \"Anthropic Claude\",\n    \"Anthropic Claude Code\",\n    \"Claude Code\",\n    \"Product Announcement\",\n    \"Company News\"\n  ],\n  \"company_names\": [\n    \"Anthropic\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 35,
+    "prediction": {
+      "relevance_score": 8,
+      "summary": "",
+      "key_insights": [
+        "Strategic Partnership",
+        "AI Infrastructure",
+        "AI Tool"
+      ],
+      "company_names": [
+        "Stripe"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 2,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"DevOps Guide\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 36,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "AI Study",
+        "AI Industry Report",
+        "AI Blog"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Industry\",\n    \"AI Study\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 37,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "Elon Musk",
+        "xAI",
+        "Company Financing",
+        "Funding Round"
+      ],
+      "company_names": [
+        "xAI"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"xAI\",\n    \"Elon Musk\",\n    \"Company Financing\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 38,
+    "prediction": {
+      "relevance_score": 1,
+      "summary": "Sponsored Ad",
+      "key_insights": [],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 1,\n  \"summary\": \"Sponsored Ad\",\n  \"key_insights\": [],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 39,
+    "prediction": {
+      "relevance_score": 8,
+      "summary": "",
+      "key_insights": [
+        "DevOps Tool",
+        "AI Tool"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 1,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"DevOps Guide\",\n    \"Non-AI News\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 40,
+    "prediction": {
+      "relevance_score": 2,
+      "summary": "",
+      "key_insights": [
+        "China",
+        "AI Infrastructure"
+      ],
+      "company_names": [
+        "China"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 7,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Space Exploration\",\n    \"Space Travel\",\n    \"China\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 41,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "AI Industry Report",
+        "AI Study"
+      ],
+      "company_names": [
+        "Apple",
+        "Amazon Web Services"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 9,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Industry Report\",\n    \"Apple\",\n    \"Amazon\",\n    \"Amazon Web Services\",\n    \"AWS\",\n    \"Google\",\n    \"Market Competition\"\n  ],\n  \"company_names\": [\n    \"Apple\",\n    \"Amazon\",\n    \"Amazon Web Services\",\n    \"AWS\",\n    \"Google\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 42,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "Google",
+        "Quantum Computing",
+        "Google Willow"
+      ],
+      "company_names": [
+        "Google"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 9,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Google\",\n    \"AI Infrastructure\",\n    \"AI Chip\",\n    \"Quantum Computing\"\n  ],\n  \"company_names\": [\n    \"Google\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 43,
+    "prediction": {
+      "relevance_score": 9,
+      "summary": "",
+      "key_insights": [
+        "AI Tool",
+        "AI Coach",
+        "Product Announcement",
+        "Company Financing"
+      ],
+      "company_names": [
+        "Growl"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 9,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Growl\",\n    \"AI Startup\",\n    \"Company Financing\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 44,
+    "prediction": {
+      "relevance_score": 9,
+      "summary": "Sponsored Ad",
+      "key_insights": [],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 2,\n  \"summary\": \"Sponsored Ad\",\n  \"key_insights\": [\n    \"AI Event\",\n    \"AI Conference\"\n  ],\n  \"company_names\": [\n    \"OpenAI\",\n    \"DeepMind\",\n    \"Anthropic\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 45,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "AI Research",
+        "AI Technique",
+        "GitHub Repo"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 9,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Technique\",\n    \"AI Research\",\n    \"AI Model\",\n    \"GitHub Repo\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 46,
+    "prediction": {
+      "relevance_score": 8,
+      "summary": "",
+      "key_insights": [
+        "AI Industry Report",
+        "AI Study",
+        "AI Study"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Industry Report\",\n    \"AI Blog\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 47,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "Google",
+        "Google CEO",
+        "Sundar Pichai",
+        "Company News"
+      ],
+      "company_names": [
+        "Google"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Google\",\n    \"Sundar Pichai\",\n    \"Google CEO Sundar Pichai\",\n    \"AI Economics\"\n  ],\n  \"company_names\": [\n    \"Google\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 48,
+    "prediction": {
+      "relevance_score": 1,
+      "summary": "",
+      "key_insights": [
+        "DevOps Guide"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 1,\n  \"summary\": \"\",\n  \"key_insights\": [],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 49,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "Google",
+        "Google AI",
+        "Google Trillium",
+        "Google Gemini",
+        "AI Infrastructure",
+        "AI Chip",
+        "Product Announcement",
+        "Company News"
+      ],
+      "company_names": [
+        "Google"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Google\",\n    \"Google AI\",\n    \"Google AI Chip\",\n    \"AI Infrastructure\",\n    \"AI Chip\",\n    \"Trillium\",\n    \"Google Gemini\"\n  ],\n  \"company_names\": [\n    \"Google\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 50,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "OpenAI ChatGPT",
+        "AI Technique",
+        "AI Optimization",
+        "Company Blog"
+      ],
+      "company_names": [
+        "OpenAI"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"OpenAI\",\n    \"OpenAI ChatGPT\",\n    \"AI Study\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 51,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "AI Tool",
+        "AI Model",
+        "GitHub Repo"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 9,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Audio Models\",\n    \"Classifier\",\n    \"AI Tool\",\n    \"AI Technique\",\n    \"GitHub Repo\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 52,
+    "prediction": {
+      "relevance_score": 9,
+      "summary": "",
+      "key_insights": [
+        "AI Dataset",
+        "AI Technique",
+        "Image AI",
+        "Video AI"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Research\",\n    \"AI Tool\",\n    \"AI Dataset\",\n    \"Domain AI\",\n    \"Autonomous Vehicle\",\n    \"Self-Driving Car\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 53,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "AI Industry Report",
+        "AI Vision"
+      ],
+      "company_names": [
+        "World Labs"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Fei-Fei Li\",\n    \"AI Research\",\n    \"World Labs\",\n    \"Computer Vision\"\n  ],\n  \"company_names\": [\n    \"World Labs\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 54,
+    "prediction": {
+      "relevance_score": 9,
+      "summary": "",
+      "key_insights": [
+        "Amazon",
+        "Robotics AI",
+        "AI Robotics"
+      ],
+      "company_names": [
+        "Amazon"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 8,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Autonomous Vehicles\",\n    \"Autonomous Drone\",\n    \"Robotics AI\",\n    \"AI Robotics\",\n    \"Amazon\"\n  ],\n  \"company_names\": [\n    \"Amazom\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 55,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "OpenAI",
+        "Company News",
+        "Product Announcement"
+      ],
+      "company_names": [
+        "OpenAI"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"OpenAI\",\n    \"Product Annoucement\",\n    \"Company News\"\n  ],\n  \"company_names\": [\n    \"OpenAI\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 56,
+    "prediction": {
+      "relevance_score": 9,
+      "summary": "",
+      "key_insights": [
+        "Amazon",
+        "Amazon Web Services",
+        "AWS",
+        "Market Competition"
+      ],
+      "company_names": [
+        "Amazon",
+        "Amazon Web Services",
+        "AWS"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 8,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Amazon\",\n    \"Temu\",\n    \"Market Competition\"\n  ],\n  \"company_names\": [\n    \"Amazon\",\n    \"Temu\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 57,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "AI Research",
+        "AI Tool",
+        "Robotics AI",
+        "AI Robotics"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 9,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Robotics AI\",\n    \"AI Robotics\",\n    \"AI Tool\",\n    \"AI Technique\",\n    \"GitHub Repo\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 58,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "AI Tool",
+        "AI Agent",
+        "AI Blog"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 1,\n  \"summary\": \"Sponsored Ad\",\n  \"key_insights\": [],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 59,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "Google",
+        "Google CEO",
+        "Sundar Pichai",
+        "Company News"
+      ],
+      "company_names": [
+        "Google"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Google\",\n    \"Google CEO\",\n    \"Sundar Pichai\",\n    \"Company News\"\n  ],\n  \"company_names\": [\n    \"Google\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 60,
+    "prediction": {
+      "relevance_score": 1,
+      "summary": "Sponsored Ad",
+      "key_insights": [],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 1,\n  \"summary\": \"Sponsored Ad\",\n  \"key_insights\": [],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 61,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "AI Technique",
+        "AI Guide",
+        "LLM"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 9,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Guide\",\n    \"Company Blog\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 62,
+    "prediction": {
+      "relevance_score": 7,
+      "summary": "",
+      "key_insights": [
+        "Non-AI News"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 9,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Study\",\n    \"AI Industry Report\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 63,
+    "prediction": {
+      "relevance_score": 1,
+      "summary": "Sponsored Ad",
+      "key_insights": [],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 1,\n  \"summary\": \"Sponsored Ad\",\n  \"key_insights\": [],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 64,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "Inflection AI",
+        "Company News"
+      ],
+      "company_names": [
+        "Inflection AI"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Inflection AI\",\n    \"Market Competition\"\n  ],\n  \"company_names\": [\n    \"Inflection AI\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 65,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "OpenAI",
+        "Company News",
+        "AI Industry Report",
+        "AI Blog"
+      ],
+      "company_names": [
+        "OpenAI"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"OpenAI\",\n    \"Corporate Governance Structure\",\n    \"Company Financing\"\n  ],\n  \"company_names\": [\n    \"OpenAI\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 66,
+    "prediction": {
+      "relevance_score": 1,
+      "summary": "",
+      "key_insights": [],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 7,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Amazon\",\n    \"Amazon Autos\",\n    \"Market Competition\"\n  ],\n  \"company_names\": [\n    \"Amazon\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 67,
+    "prediction": {
+      "relevance_score": 8,
+      "summary": "",
+      "key_insights": [
+        "AI Industry Report"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 6,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Venture Capital\",\n    \"AI Industry Report\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 68,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "xAI",
+        "xAI Aurora",
+        "Image Model",
+        "Product Announcement",
+        "Company News"
+      ],
+      "company_names": [
+        "xAI"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"xAI\",\n    \"Grok\",\n    \"xAI Aurora\",\n    \"Grok Aurora\",\n    \"Image Model\"\n  ],\n  \"company_names\": [\n    \"xAI\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 69,
+    "prediction": {
+      "relevance_score": 7,
+      "summary": "",
+      "key_insights": [
+        "Biotech"
+      ],
+      "company_names": [
+        "Loyal"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 1,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Longevity Drugs\",\n    \"Biotech\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 70,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "AI Devices",
+        "AI Blog"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Industry Report\",\n    \"AI Study\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 71,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "Apple",
+        "AI Industry Report",
+        "AI Study"
+      ],
+      "company_names": [
+        "Apple"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Apple\",\n    \"Apple AI\",\n    \"Apple iPhone\"\n  ],\n  \"company_names\": [\n    \"Apple\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 72,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "OpenAI",
+        "AI Data",
+        "AI Incident",
+        "Company News"
+      ],
+      "company_names": [
+        "OpenAI"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"OpenAI\",\n    \"Company News\"\n  ],\n  \"company_names\": [\n    \"OpenAI\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 73,
+    "prediction": {
+      "relevance_score": 1,
+      "summary": "",
+      "key_insights": [],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 1,\n  \"summary\": \"\",\n  \"key_insights\": [],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 74,
+    "prediction": {
+      "relevance_score": 2,
+      "summary": "",
+      "key_insights": [
+        "Non-AI News"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 1,\n  \"summary\": \"\",\n  \"key_insights\": [],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 75,
+    "prediction": {
+      "relevance_score": 1,
+      "summary": "",
+      "key_insights": [
+        "Space Exploration",
+        "Space Travel"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 2,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Space Exploration\",\n    \"Space Travel\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 76,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "Google",
+        "Google AI",
+        "Google Ironwood",
+        "Google TPU",
+        "AI Infrastructure",
+        "AI Chip"
+      ],
+      "company_names": [
+        "Google"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Google\",\n    \"Google Tensor Processing Unit Chip\",\n    \"Google TPU Chip\",\n    \"Google Ironwood TPU Chip\",\n    \"AI Infrastructure\",\n    \"AI Chip\"\n  ],\n  \"company_names\": [\n    \"Google\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 77,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "Google",
+        "Character AI",
+        "Company Acquisition"
+      ],
+      "company_names": [
+        "Google",
+        "Character AI"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Google\",\n    \"Character AI\",\n    \"Company Acquisition\"\n  ],\n  \"company_names\": [\n    \"Google\",\n    \"Character AI\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 78,
+    "prediction": {
+      "relevance_score": 7,
+      "summary": "",
+      "key_insights": [
+        "AI Tool",
+        "AI Game",
+        "3D Model",
+        "Video Model"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 9,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Tool\",\n    \"AI Technique\",\n    \"GitHub Repo\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 79,
+    "prediction": {
+      "relevance_score": 9,
+      "summary": "",
+      "key_insights": [
+        "AI Research",
+        "AI Technique",
+        "Video Model",
+        "GitHub Repo"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 8,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Technique\",\n    \"AI Research\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 80,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "OpenAI",
+        "OpenAI o3",
+        "OpenAI o3-mini",
+        "Reasoning Model",
+        "Product Announcement",
+        "Company News"
+      ],
+      "company_names": [
+        "OpenAI"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"OpenAI\",\n    \"OpenAI o3\",\n    \"OpenAI o3 LLM\",\n    \"OpenAI o3 Model\",\n    \"OpenAI o3-mini\",\n    \"OpenAI o3-mini LLM\",\n    \"OpenAI o3-mini Model\",\n    \"Product Announcement\",\n    \"Company Blog\"\n  ],\n  \"company_names\": [\n    \"OpenAI\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 81,
+    "prediction": {
+      "relevance_score": 9,
+      "summary": "",
+      "key_insights": [
+        "AI Tool",
+        "AI Technique",
+        "GitHub Repo"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 7,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Tool\",\n    \"GitHub Repo\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 82,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "AI Tool",
+        "AI Technique",
+        "GitHub Repo"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 9,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Tool\",\n    \"AI Model\",\n    \"Open LLM\",\n    \"GitHub Repo\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 83,
+    "prediction": {
+      "relevance_score": 7,
+      "summary": "",
+      "key_insights": [
+        "DevOps Guide",
+        "AI Tool"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 1,\n  \"summary\": \"\",\n  \"key_insights\": [],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 84,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "AI Technique",
+        "AI Guide"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 9,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Technique\",\n    \"AI Study\",\n    \"AI Blog\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 85,
+    "prediction": {
+      "relevance_score": 7,
+      "summary": "",
+      "key_insights": [
+        "AI Study",
+        "AI Industry Report",
+        "AI Blog"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 9,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Industry Report\",\n    \"AI Study\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 86,
+    "prediction": {
+      "relevance_score": 7,
+      "summary": "",
+      "key_insights": [
+        "DevOps Tool",
+        "GitHub Repo"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 1,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"GitHub Repo\",\n    \"Other Tools\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 87,
+    "prediction": {
+      "relevance_score": 6,
+      "summary": "",
+      "key_insights": [
+        "Non-AI News"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 1,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Non-AI News\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 88,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "AI Policy",
+        "AI Initiative",
+        "Sriram Krishnan"
+      ],
+      "company_names": [
+        "The White House",
+        "The Trump Administration"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Policy\",\n    \"AI Regulation\",\n    \"AI Law\"\n  ],\n  \"company_names\": [\n    \"a16z\",\n    \"White House\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 89,
+    "prediction": {
+      "relevance_score": 6,
+      "summary": "",
+      "key_insights": [
+        "Robotics AI",
+        "AI Drone"
+      ],
+      "company_names": [
+        "Nippon Telegraph and Telephone"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 7,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"Nippon Telegraph and Telephone\",\n    \"NTT\",\n    \"AI Infrastucture\"\n  ],\n  \"company_names\": [\n    \"Nippon Telegraph and Telephone\",\n    \"NTT\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 90,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "AI Industry Report",
+        "AI Study",
+        "China",
+        "Market Competition"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 9,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"China\",\n    \"America\",\n    \"AI Chip\",\n    \"Market Competition\"\n  ],\n  \"company_names\": [\n    \"China\",\n    \"America\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 91,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "Sponsored Ad",
+        "AI Tool",
+        "AI Guide"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 1,\n  \"summary\": \"Sponsored Ad\",\n  \"key_insights\": [],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 92,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "AI Industry Report",
+        "AI Infrastructure",
+        "AI Investment",
+        "OpenAI",
+        "SoftBank"
+      ],
+      "company_names": [
+        "OpenAI",
+        "SoftBank"
+      ]
+    },
+    "reference": "{\n  \"relevance_score\": 10,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"SoftBank\",\n    \"OpenAI\",\n    \"AI Infrastructure\",\n    \"AI Chip\"\n  ],\n  \"company_names\": [\n    \"SoftBank\",\n    \"OpenAI\",\n    \"SB Energy\"\n  ]\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 93,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "AI Technique",
+        "AI Model",
+        "GitHub Repo"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 9,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Technique\",\n    \"Diffusion Model\",\n    \"GitHub Repo\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 94,
+    "prediction": {
+      "relevance_score": 9,
+      "summary": "",
+      "key_insights": [
+        "AI Technique",
+        "AI Optimization",
+        "AI Research",
+        "Transformer Model",
+        "GitHub Repo"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 9,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Research\",\n    \"AI Technique\",\n    \"Domain AI\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  },
+  {
+    "example_id": 95,
+    "prediction": {
+      "relevance_score": 10,
+      "summary": "",
+      "key_insights": [
+        "AI Tool",
+        "AI Agent",
+        "GitHub Repo"
+      ],
+      "company_names": []
+    },
+    "reference": "{\n  \"relevance_score\": 8,\n  \"summary\": \"\",\n  \"key_insights\": [\n    \"AI Tool\",\n    \"GitHub Repo\"\n  ],\n  \"company_names\": []\n}",
+    "is_valid_json": true,
+    "is_valid_schema": true
+  }
+]

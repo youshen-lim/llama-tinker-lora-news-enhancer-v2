@@ -1,0 +1,15 @@
+{
+  "method": "Tinker sl_basic (Optimized v2)",
+  "started_at": "2025-11-03T10:46:17.410288",
+  "completed_at": "2025-11-03T10:46:30.182615",
+  "duration_minutes": 0.21287211666666667,
+  "num_examples": 317,
+  "num_epochs": 3,
+  "physical_batch_size": 2,
+  "gradient_accumulation_steps": 4,
+  "effective_batch_size": 8,
+  "learning_rate": 0.0002,
+  "lora_rank": 32,
+  "log_path": "./AI_Projects/News_FineTuning/fine_tuning_experiments/tinker_logs_slbasic",
+  "notes": "Optimized hyperparameters from FINAL_UNIFIED_CONFIGURATION.md"
+}

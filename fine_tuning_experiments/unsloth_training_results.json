@@ -1,0 +1,15 @@
+{
+  "model": "unsloth/Llama-3.2-1B",
+  "started_at": "2025-11-04 06:03:00",
+  "completed_at": "2025-11-04 06:07:10",
+  "duration_minutes": 4.09,
+  "num_examples": 364,
+  "num_epochs": 5,
+  "max_steps": 225,
+  "final_loss": 1.0223813014560275,
+  "total_steps": 225,
+  "batch_size": 2,
+  "effective_batch_size": 8,
+  "learning_rate": 0.0002,
+  "warmup_steps": 11
+}

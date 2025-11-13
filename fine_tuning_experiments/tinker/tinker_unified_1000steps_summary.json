@@ -1,0 +1,17 @@
+{
+  "method": "Tinker sl_basic (Unified Configuration)",
+  "started_at": "2025-11-03T10:55:20.796820",
+  "completed_at": "2025-11-03T10:55:29.844349",
+  "duration_minutes": 0.15079215,
+  "num_examples": 317,
+  "max_steps": 1000,
+  "total_epochs": 25.6,
+  "physical_batch_size": 2,
+  "gradient_accumulation_steps": 4,
+  "effective_batch_size": 8,
+  "learning_rate": 0.0002,
+  "lora_rank": 32,
+  "warmup_steps": 50,
+  "log_path": "./AI_Projects/News_FineTuning/fine_tuning_experiments/tinker_logs_slbasic",
+  "notes": "Unified hyperparameters matching Unsloth for fair comparison"
+}

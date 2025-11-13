@@ -1,0 +1,13 @@
+{
+  "model_name": "Llama-3.2-1B-Newsletter-Analyst",
+  "base_model": "meta-llama/Llama-3.2-1B",
+  "framework": "Tinker API",
+  "training_date": "2025-11-04 01:17:13",
+  "training_examples": 364,
+  "test_examples": 96,
+  "split_ratio": "80/20",
+  "num_epochs": 5,
+  "lora_rank": 32,
+  "lora_alpha": 32,
+  "learning_rate": 0.0002
+}

@@ -1,0 +1,18 @@
+{
+  "timestamp": "20251109_041004",
+  "metadata": {
+    "n_predictions": 96,
+    "include_statistical_tests": true,
+    "include_agreement_metrics": true
+  },
+  "tinker_quality_metrics": {},
+  "unsloth_quality_metrics": {},
+  "tinker_descriptive_stats": {},
+  "unsloth_descriptive_stats": {},
+  "statistical_inference": null,
+  "agreement_metrics": null,
+  "visualization_paths": [],
+  "saved_files": [
+    "./AI_Projects/News_FineTuning/evaluation_results/Final_Comparison/metrics/evaluation_summary_20251109_041004.csv"
+  ]
+}

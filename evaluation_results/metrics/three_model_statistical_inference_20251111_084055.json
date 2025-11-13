@@ -1,0 +1,440 @@
+{
+  "baseline_vs_tinker": {
+    "f1_key_insights": {
+      "metric_name": "f1_key_insights",
+      "model1_mean": 0.13541666666666666,
+      "model2_mean": 0.4636357855107855,
+      "mean_difference": 0.3282191188441188,
+      "paired_ttest": {
+        "statistic": -6.506858243822016,
+        "pvalue": 3.5855817161154905e-09,
+        "significant": true
+      },
+      "wilcoxon_test": {
+        "statistic": 572.0,
+        "pvalue": 2.2899654593048292e-06,
+        "significant": true
+      },
+      "effect_sizes": {
+        "cohens_d": -0.9837428470043073
+      },
+      "confidence_interval": {
+        "lower": -0.42420684205840453,
+        "upper": -0.23193741732804238
+      },
+      "statistical_power": 0.9999999999999826
+    },
+    "f1_company_names": {
+      "metric_name": "f1_company_names",
+      "model1_mean": 0.65625,
+      "model2_mean": 0.7610119047619047,
+      "mean_difference": 0.10476190476190472,
+      "paired_ttest": {
+        "statistic": -1.6794253681197917,
+        "pvalue": 0.09635527045950014,
+        "significant": false
+      },
+      "wilcoxon_test": {
+        "statistic": 343.0,
+        "pvalue": 0.222135563806249,
+        "significant": false
+      },
+      "effect_sizes": {
+        "cohens_d": -0.23549625499742874
+      },
+      "confidence_interval": {
+        "lower": -0.21641369047619044,
+        "upper": 0.01248015873015866
+      },
+      "statistical_power": 0.6270593359460502
+    },
+    "f1_overall": {
+      "metric_name": "f1_overall",
+      "model1_mean": 0.3958333333333333,
+      "model2_mean": 0.6123238451363451,
+      "mean_difference": 0.21649051180301176,
+      "paired_ttest": {
+        "statistic": -5.02546560463607,
+        "pvalue": 2.3563986135838784e-06,
+        "significant": true
+      },
+      "wilcoxon_test": {
+        "statistic": 788.5,
+        "pvalue": 2.3944959679425367e-05,
+        "significant": true
+      },
+      "effect_sizes": {
+        "cohens_d": -0.7102714601137038
+      },
+      "confidence_interval": {
+        "lower": -0.29841904189560436,
+        "upper": -0.1334743923611111
+      },
+      "statistical_power": 0.9999995838555055
+    },
+    "jaccard_key_insights": {
+      "metric_name": "jaccard_key_insights",
+      "model1_mean": 0.13541666666666666,
+      "model2_mean": 0.363150477994228,
+      "mean_difference": 0.22773381132756135,
+      "paired_ttest": {
+        "statistic": -4.940731868188881,
+        "pvalue": 3.3341438070529406e-06,
+        "significant": true
+      },
+      "wilcoxon_test": {
+        "statistic": 572.0,
+        "pvalue": 2.2728919539485175e-06,
+        "significant": true
+      },
+      "effect_sizes": {
+        "cohens_d": -0.7030797557803619
+      },
+      "confidence_interval": {
+        "lower": -0.31390223853114474,
+        "upper": -0.13952925835738345
+      },
+      "statistical_power": 0.9999994068657029
+    },
+    "jaccard_company_names": {
+      "metric_name": "jaccard_company_names",
+      "model1_mean": 0.65625,
+      "model2_mean": 0.7498263888888888,
+      "mean_difference": 0.09357638888888875,
+      "paired_ttest": {
+        "statistic": -1.5191475491674726,
+        "pvalue": 0.13204653155741364,
+        "significant": false
+      },
+      "wilcoxon_test": {
+        "statistic": 343.0,
+        "pvalue": 0.222135563806249,
+        "significant": false
+      },
+      "effect_sizes": {
+        "cohens_d": -0.20889720784228089
+      },
+      "confidence_interval": {
+        "lower": -0.20486111111111108,
+        "upper": 0.023819444444444414
+      },
+      "statistical_power": 0.5263796138597707
+    },
+    "mae_relevance": {
+      "metric_name": "mae_relevance",
+      "model1_mean": 6.979166666666667,
+      "model2_mean": 1.8020833333333333,
+      "mean_difference": -5.177083333333334,
+      "paired_ttest": {
+        "statistic": 9.280623968465616,
+        "pvalue": 5.700004376700167e-15,
+        "significant": true
+      },
+      "wilcoxon_test": {
+        "statistic": 390.5,
+        "pvalue": 4.680794671896075e-12,
+        "significant": true
+      },
+      "effect_sizes": {
+        "cohens_d": 1.6666993984031173
+      },
+      "confidence_interval": {
+        "lower": 4.1351562500000005,
+        "upper": 6.260677083333333
+      },
+      "statistical_power": 1.0
+    }
+  },
+  "baseline_vs_unsloth": {
+    "f1_key_insights": {
+      "metric_name": "f1_key_insights",
+      "model1_mean": 0.13541666666666666,
+      "model2_mean": 0.43453057359307357,
+      "mean_difference": 0.29911390692640694,
+      "paired_ttest": {
+        "statistic": -5.829352053337004,
+        "pvalue": 7.615249940048259e-08,
+        "significant": true
+      },
+      "wilcoxon_test": {
+        "statistic": 639.0,
+        "pvalue": 1.92318679998462e-05,
+        "significant": true
+      },
+      "effect_sizes": {
+        "cohens_d": -0.9058989688912394
+      },
+      "confidence_interval": {
+        "lower": -0.3953377525252525,
+        "upper": -0.1929597688191438
+      },
+      "statistical_power": 0.9999999999955755
+    },
+    "f1_company_names": {
+      "metric_name": "f1_company_names",
+      "model1_mean": 0.65625,
+      "model2_mean": 0.7719246031746033,
+      "mean_difference": 0.11567460317460332,
+      "paired_ttest": {
+        "statistic": -1.950855664155779,
+        "pvalue": 0.05402077137053055,
+        "significant": false
+      },
+      "wilcoxon_test": {
+        "statistic": 282.0,
+        "pvalue": 0.17157764381092266,
+        "significant": false
+      },
+      "effect_sizes": {
+        "cohens_d": -0.2628335472210708
+      },
+      "confidence_interval": {
+        "lower": -0.22539682539682537,
+        "upper": -8.928571428571836e-05
+      },
+      "statistical_power": 0.7221258317280012
+    },
+    "f1_overall": {
+      "metric_name": "f1_overall",
+      "model1_mean": 0.3958333333333333,
+      "model2_mean": 0.6032275883838384,
+      "mean_difference": 0.20739425505050507,
+      "paired_ttest": {
+        "statistic": -4.905573801643699,
+        "pvalue": 3.847111613269512e-06,
+        "significant": true
+      },
+      "wilcoxon_test": {
+        "statistic": 742.0,
+        "pvalue": 4.124719146386897e-05,
+        "significant": true
+      },
+      "effect_sizes": {
+        "cohens_d": -0.6835860404257523
+      },
+      "confidence_interval": {
+        "lower": -0.28862787097162096,
+        "upper": -0.12616687710437713
+      },
+      "statistical_power": 0.9999984861195761
+    },
+    "jaccard_key_insights": {
+      "metric_name": "jaccard_key_insights",
+      "model1_mean": 0.13541666666666666,
+      "model2_mean": 0.33266594516594516,
+      "mean_difference": 0.1972492784992785,
+      "paired_ttest": {
+        "statistic": -4.267768019049986,
+        "pvalue": 4.6715087654034654e-05,
+        "significant": true
+      },
+      "wilcoxon_test": {
+        "statistic": 639.0,
+        "pvalue": 1.9148310743112913e-05,
+        "significant": true
+      },
+      "effect_sizes": {
+        "cohens_d": -0.6265287326176435
+      },
+      "confidence_interval": {
+        "lower": -0.28319841833513704,
+        "upper": -0.101788391729798
+      },
+      "statistical_power": 0.9999807036798796
+    },
+    "jaccard_company_names": {
+      "metric_name": "jaccard_company_names",
+      "model1_mean": 0.65625,
+      "model2_mean": 0.7585069444444444,
+      "mean_difference": 0.10225694444444444,
+      "paired_ttest": {
+        "statistic": -1.7563812647401067,
+        "pvalue": 0.08224581098854704,
+        "significant": false
+      },
+      "wilcoxon_test": {
+        "statistic": 282.0,
+        "pvalue": 0.17157764381092266,
+        "significant": false
+      },
+      "effect_sizes": {
+        "cohens_d": -0.23066154822080834
+      },
+      "confidence_interval": {
+        "lower": -0.20885850694444444,
+        "upper": 0.008854166666666668
+      },
+      "statistical_power": 0.6091845671282344
+    },
+    "mae_relevance": {
+      "metric_name": "mae_relevance",
+      "model1_mean": 6.979166666666667,
+      "model2_mean": 1.4270833333333333,
+      "mean_difference": -5.552083333333334,
+      "paired_ttest": {
+        "statistic": 11.14890194261573,
+        "pvalue": 5.950934651683878e-19,
+        "significant": true
+      },
+      "wilcoxon_test": {
+        "statistic": 251.5,
+        "pvalue": 9.602932668825152e-14,
+        "significant": true
+      },
+      "effect_sizes": {
+        "cohens_d": 1.8741598843236174
+      },
+      "confidence_interval": {
+        "lower": 4.655989583333334,
+        "upper": 6.5109375
+      },
+      "statistical_power": 1.0
+    }
+  },
+  "tinker_vs_unsloth": {
+    "f1_key_insights": {
+      "metric_name": "f1_key_insights",
+      "model1_mean": 0.4636357855107855,
+      "model2_mean": 0.43453057359307357,
+      "mean_difference": -0.029105211917711926,
+      "paired_ttest": {
+        "statistic": 0.9192458195194118,
+        "pvalue": 0.3602951881284715,
+        "significant": false
+      },
+      "wilcoxon_test": {
+        "statistic": 573.5,
+        "pvalue": 0.2086576852654839,
+        "significant": false
+      },
+      "effect_sizes": {
+        "cohens_d": 0.09111932729660742
+      },
+      "confidence_interval": {
+        "lower": -0.04206869230306724,
+        "upper": 0.09063341750841752
+      },
+      "statistical_power": 0.14315218933836554
+    },
+    "f1_company_names": {
+      "metric_name": "f1_company_names",
+      "model1_mean": 0.7610119047619047,
+      "model2_mean": 0.7719246031746033,
+      "mean_difference": 0.010912698412698596,
+      "paired_ttest": {
+        "statistic": -0.38034000620186165,
+        "pvalue": 0.7045421105057885,
+        "significant": false
+      },
+      "wilcoxon_test": {
+        "statistic": 33.5,
+        "pvalue": 0.6615822420888346,
+        "significant": false
+      },
+      "effect_sizes": {
+        "cohens_d": -0.026977478241856034
+      },
+      "confidence_interval": {
+        "lower": -0.07291666666666667,
+        "upper": 0.04216269841269841
+      },
+      "statistical_power": 0.05787972518746365
+    },
+    "f1_overall": {
+      "metric_name": "f1_overall",
+      "model1_mean": 0.6123238451363451,
+      "model2_mean": 0.6032275883838384,
+      "mean_difference": -0.009096256752506693,
+      "paired_ttest": {
+        "statistic": 0.3892929036056808,
+        "pvalue": 0.6979307564148312,
+        "significant": false
+      },
+      "wilcoxon_test": {
+        "statistic": 661.0,
+        "pvalue": 0.3610585349397758,
+        "significant": false
+      },
+      "effect_sizes": {
+        "cohens_d": 0.03324552649851952
+      },
+      "confidence_interval": {
+        "lower": -0.04064091941045064,
+        "upper": 0.05214739904193027
+      },
+      "statistical_power": 0.06199461914589138
+    },
+    "jaccard_key_insights": {
+      "metric_name": "jaccard_key_insights",
+      "model1_mean": 0.363150477994228,
+      "model2_mean": 0.33266594516594516,
+      "mean_difference": -0.03048453282828284,
+      "paired_ttest": {
+        "statistic": 1.079426033071499,
+        "pvalue": 0.2831307898587308,
+        "significant": false
+      },
+      "wilcoxon_test": {
+        "statistic": 579.5,
+        "pvalue": 0.22847574432190687,
+        "significant": false
+      },
+      "effect_sizes": {
+        "cohens_d": 0.1041193591065134
+      },
+      "confidence_interval": {
+        "lower": -0.031026579034391537,
+        "upper": 0.08573902153980276
+      },
+      "statistical_power": 0.17252137856542596
+    },
+    "jaccard_company_names": {
+      "metric_name": "jaccard_company_names",
+      "model1_mean": 0.7498263888888888,
+      "model2_mean": 0.7585069444444444,
+      "mean_difference": 0.008680555555555691,
+      "paired_ttest": {
+        "statistic": -0.308788652491224,
+        "pvalue": 0.7581584518206428,
+        "significant": false
+      },
+      "wilcoxon_test": {
+        "statistic": 34.5,
+        "pvalue": 0.7193840242313603,
+        "significant": false
+      },
+      "effect_sizes": {
+        "cohens_d": -0.021100948590539848
+      },
+      "confidence_interval": {
+        "lower": -0.06878472222222218,
+        "upper": 0.044444444444444446
+      },
+      "statistical_power": 0.05481212320234068
+    },
+    "mae_relevance": {
+      "metric_name": "mae_relevance",
+      "model1_mean": 1.8020833333333333,
+      "model2_mean": 1.4270833333333333,
+      "mean_difference": -0.375,
+      "paired_ttest": {
+        "statistic": 1.5432483918299718,
+        "pvalue": 0.12609520079732334,
+        "significant": false
+      },
+      "wilcoxon_test": {
+        "statistic": 402.0,
+        "pvalue": 0.08121574420705113,
+        "significant": false
+      },
+      "effect_sizes": {
+        "cohens_d": 0.16022829274262299
+      },
+      "confidence_interval": {
+        "lower": -0.1044270833333331,
+        "upper": 0.8648437499999998
+      },
+      "statistical_power": 0.3426225834864725
+    }
+  }
+}

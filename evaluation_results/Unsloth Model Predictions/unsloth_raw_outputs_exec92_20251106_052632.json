@@ -1,0 +1,20 @@
+{
+  "execution_count": 92,
+  "timestamp": "20251106_052632",
+  "date": "2025-11-06 05:26:33",
+  "model_path": "./AI_Projects/News_FineTuning/unsloth_models/merged_model",
+  "total_predictions": 0,
+  "successful_predictions": 3,
+  "failed_predictions": 2,
+  "success_rate": 0,
+  "generation_config": {
+    "max_new_tokens": 512,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "stop_tokens": [
+      128001,
+      128009
+    ]
+  },
+  "predictions": []
+}
