@@ -58,6 +58,7 @@ This project presents a comprehensive evaluation of **LoRA fine-tuning approache
 - [Project Overview](#-project-overview)
 - [Dataset](#-dataset)
 - [Methodology](#-methodology)
+- [Fine-Tuning Frameworks](#-fine-tuning-frameworks)
 - [Training Configuration](#-training-configuration)
 - [Evaluation Results](#-evaluation-results)
 - [Key Findings](#-key-findings)
@@ -186,6 +187,97 @@ This fine-tuned model serves as the "semantic layer" for the [News Analyst MCP A
 - Training: 364 examples, 5 epochs
 - Local GPU (Tesla T4) with 4-bit quantization support
 - **Purpose**: Compare open-source local training approach
+
+---
+
+## 🔧 Fine-Tuning Frameworks
+
+### Method A: Tinker API Fine-Tuning
+
+**Using Thinking Machines' managed training API to fine-tune Llama 3.2 1B with LoRA.**
+
+#### What is Tinker?
+
+Tinker is a training API that lets you control every aspect of model training and fine-tuning while handling the infrastructure. You write a simple Python training loop that runs on your CPU-only machine, and Tinker handles the distributed training on GPUs.
+
+#### Advantages
+
+- ✅ **Ready, managed infrastructure services** - No GPU management, hardware failures handled transparently, and abstraction of infrastructure complexity
+- ✅ **Low-rank adaptation (LoRA)** - Efficient fine-tuning by training small add-on modules instead of all weights
+- ✅ **Distributed training** - Automatic handling of training across multiple GPUs
+- ✅ **Flexible control** - Full control over training loop via simple API calls (`forward_backward()`, `optim_step()`, `sample()`, `save_state()`)
+- ✅ **Large model support** - Can fine-tune models up to Llama 70B and Qwen 235B
+
+#### Implementation
+
+- Uses `tinker_cookbook.recipes.sl_basic` for supervised learning
+- LoRA rank: 32 (default)
+- Training on Llama 3.2 1B (16-bit precision)
+- 80/20 train split (no validation set for 5 epochs)
+
+#### Requirements
+
+- Tinker API key (beta access from https://thinkingmachines.ai/tinker/)
+- ~20-30 minutes training time
+- Python environment with `tinker` and `tinker_cookbook` packages
+
+#### Learn More
+
+- **Documentation:** https://tinker-docs.thinkingmachines.ai/
+- **GitHub:** https://github.com/thinking-machines-lab/tinker
+- **Blog:** https://thinkingmachines.ai/blog/announcing-tinker/
+
+---
+
+### Method B: Unsloth Framework
+
+**Using Unsloth for efficient LoRA fine-tuning directly in Google Colab.**
+
+#### What is Unsloth?
+
+Unsloth is an open-source framework that makes LLM fine-tuning **2-10x faster** with **70% less VRAM** through manually-optimized GPU kernels written in Triton. It's fully compatible with the Hugging Face ecosystem (transformers, PEFT, TRL).
+
+#### How Does It Work?
+
+Unsloth manually rewrites PyTorch's autograd operations and model components (attention, MLP, cross-entropy loss) into optimized Triton kernels. This eliminates overhead from PyTorch's dynamic computation graph while maintaining **0% accuracy loss**—no approximations are used.
+
+#### Advantages
+
+- ✅ **Free & open-source** - Community-driven development
+- ✅ **2-10x faster training** - Manual kernel optimization vs standard implementations
+- ✅ **70% less VRAM** - Efficient memory management allows larger batch sizes
+- ✅ **Full ecosystem integration** - Works with Hugging Face transformers, PEFT, TRL
+- ✅ **Direct GGUF export** - Export to GGUF format for llama.cpp/Ollama deployment
+- ✅ **Broad GPU support** - NVIDIA (GTX 1070 to H100), AMD, and Intel GPUs
+- ✅ **No accuracy loss** - Exact computation with zero approximations
+
+#### Key Optimizations
+
+- Manual autograd for MLP and attention modules
+- Triton-based fused kernels for batch operations
+- Native 4-bit QLoRA support
+- Optimized cross-entropy loss computation
+- Efficient gradient checkpointing
+
+#### Implementation
+
+- Uses `FastLanguageModel` for model loading and LoRA configuration
+- LoRA rank: 32 (matched to Tinker for fair comparison)
+- Training on Llama 3.2 1B (16-bit precision)
+- 80/20 train split with `SFTTrainer` from TRL
+- `train_on_responses_only` masking for training only on assistant responses
+
+#### Requirements
+
+- Google Colab with GPU (T4 or better recommended)
+- ~30-45 minutes training time (depends on GPU)
+- Packages: `unsloth`, `transformers`, `peft`, `trl`, `accelerate`
+
+#### Learn More
+
+- **Website:** https://unsloth.ai/
+- **Documentation:** https://docs.unsloth.ai/
+- **GitHub:** https://github.com/unslothai/unsloth
 
 ---
 
