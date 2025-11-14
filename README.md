@@ -500,36 +500,161 @@ snapshot_download(repo_id="Truthseeker87/llama-news-enhancer-lora")
 
 ### Evaluation Visualizations
 
-The project includes 13 comprehensive visualizations generated during evaluation:
-
-1. **Forest Plot** - Statistical inference with effect sizes and 95% CI
-2. **JSON Validation Comparison** - Bar chart showing 5% vs 100% validity
-3. **F1 Score by Field** - Comparison across key_insights, company_names, overall
-4. **Precision/Recall Comparison** - Model performance breakdown
-5. **Relevance Error Distribution** - MAE and R² visualization
-6. **Response Length Box Plot** - Shows baseline's empty outputs
-7. **Response Length Violin Plot** - Distribution analysis
-8. **Word Count Box Plot** - Consistency comparison
-9. **Response Length Histogram** - Frequency distribution
-10. **Statistical Summary Heatmap** - Comprehensive metrics overview
-11. **ROUGE Scores Comparison** - ROUGE-1, ROUGE-2, ROUGE-L
-12. **Output Consistency (CV)** - Coefficient of variation analysis
-13. **BERTScore Comparison** - Semantic similarity metrics
-
-**Location:** `./evaluation_results/visualizations/`
-
-### Key Visualization Insights
-
-#### JSON Validation Comparison
-**Key Insight:** Baseline fails 95% of the time, fine-tuned models achieve 100% validity.
-
-#### F1 Score by Field
-**Key Insight:** Fine-tuned models show consistent improvement across all fields.
-
-#### Forest Plot (Statistical Inference)
-**Key Insight:** Large effect sizes (Cohen's d > 0.7) prove statistical significance.
+The project includes 13 comprehensive visualizations generated during evaluation. All visualizations are available in `./evaluation_results/visualizations/`.
 
 ---
+
+### 1. Forest Plot - Statistical Inference
+
+**Statistical inference with effect sizes and 95% confidence intervals comparing all three models.**
+
+![Forest Plot](./evaluation_results/visualizations/forest_plot_three_models_20251111_084543.png)
+
+**Key Insight:** Large effect sizes (Cohen's d > 0.7) prove statistical significance between baseline and fine-tuned models. No significant difference between Tinker and Unsloth (p=0.698).
+
+---
+
+### 2. JSON Validation Comparison
+
+**Bar chart showing JSON validity rates across all three models.**
+
+![JSON Validation Comparison](./evaluation_results/visualizations/json_validation_comparison_20251111_084543.png)
+
+**Key Insight:** Baseline fails 95% of the time (5.2% validity), while both fine-tuned models achieve 100% validity. This proves fine-tuning is essential, not optional.
+
+---
+
+### 3. F1 Score by Field
+
+**Comparison of F1 scores across key_insights, company_names, and overall metrics.**
+
+![F1 Score by Field](./evaluation_results/visualizations/f1_score_by_field_20251111_084543.png)
+
+**Key Insight:** Fine-tuned models show consistent improvement across all fields. Baseline struggles with all structured fields (F1 ~0.40), while fine-tuned models achieve F1 ~0.61.
+
+---
+
+### 4. Precision/Recall Comparison
+
+**Model performance breakdown showing precision and recall for each model.**
+
+![Precision/Recall Comparison](./evaluation_results/visualizations/precision_recall_comparison_20251111_084543.png)
+
+**Key Insight:** Fine-tuned models achieve balanced precision and recall, while baseline shows poor performance on both metrics.
+
+---
+
+### 5. Relevance Error Distribution
+
+**MAE (Mean Absolute Error) and R² visualization for relevance score predictions.**
+
+![Relevance Error Distribution](./evaluation_results/visualizations/relevance_error_distribution_20251111_084543.png)
+
+**Key Insight:** Baseline has MAE of 6.98 (terrible), while fine-tuned models achieve MAE of 1.43-1.80 (acceptable). Unsloth shows slightly better R² (0.435 vs 0.297).
+
+---
+
+### 6. Response Length Box Plot
+
+**Box plot showing response length distribution, highlighting baseline's empty outputs.**
+
+![Response Length Box Plot](./evaluation_results/visualizations/response_length_boxplot_20251111_084543.png)
+
+**Key Insight:** Baseline produces extremely short responses (median ~12 chars), while fine-tuned models generate consistent structured outputs (median ~30-35 chars).
+
+---
+
+### 7. Response Length Violin Plot
+
+**Distribution analysis of response lengths across all three models.**
+
+![Response Length Violin Plot](./evaluation_results/visualizations/response_length_violin_20251111_084543.png)
+
+**Key Insight:** Fine-tuned models show consistent, narrow distributions, while baseline shows high variance and skew toward empty outputs.
+
+---
+
+### 8. Word Count Box Plot
+
+**Consistency comparison of word counts across models.**
+
+![Word Count Box Plot](./evaluation_results/visualizations/word_count_boxplot_20251111_084543.png)
+
+**Key Insight:** Fine-tuned models produce consistent word counts (median ~6-7 words), while baseline produces minimal output (median ~2-3 words).
+
+---
+
+### 9. Response Length Histogram
+
+**Frequency distribution of response lengths.**
+
+![Response Length Histogram](./evaluation_results/visualizations/response_length_histogram_20251111_084543.png)
+
+**Key Insight:** Baseline responses cluster at very low character counts, while fine-tuned models show normal distributions around higher character counts.
+
+---
+
+### 10. Statistical Summary Heatmap
+
+**Comprehensive metrics overview showing all evaluation metrics in a heatmap.**
+
+![Statistical Summary Heatmap](./evaluation_results/visualizations/statistical_summary_heatmap_20251111_084543.png)
+
+**Key Insight:** Visual summary of all metrics confirms fine-tuned models outperform baseline across all dimensions.
+
+---
+
+### 11. ROUGE Scores Comparison
+
+**ROUGE-1, ROUGE-2, and ROUGE-L scores for all three models.**
+
+![ROUGE Scores Comparison](./evaluation_results/visualizations/rouge_scores_comparison_20251111_084543.png)
+
+**Key Insight:** Fine-tuned models achieve significantly higher ROUGE scores, indicating better overlap with reference summaries.
+
+---
+
+### 12. Output Consistency (CV)
+
+**Coefficient of variation analysis showing output consistency.**
+
+![Output Consistency Comparison](./evaluation_results/visualizations/output_consistency_comparison_20251111_084543.png)
+
+**Key Insight:** Fine-tuned models show lower coefficient of variation, indicating more consistent and reliable outputs.
+
+---
+
+### 13. BERTScore Comparison
+
+**Semantic similarity metrics using BERTScore.**
+
+![BERTScore Comparison](./evaluation_results/visualizations/bertscore_comparison_20251111_084543.png)
+
+**Key Insight:** Fine-tuned models achieve BERTScore F1 of ~0.74, while baseline scores only 0.39 due to empty/invalid outputs.
+
+---
+
+### Summary of Visualization Insights
+
+| Visualization | Key Finding |
+|---------------|-------------|
+| **Forest Plot** | Large effect sizes (d > 0.7) prove statistical significance vs baseline |
+| **JSON Validation** | Baseline: 5.2% validity ❌ / Fine-tuned: 100% validity ✅ |
+| **F1 Score by Field** | Consistent improvement across all fields (0.40 → 0.61) |
+| **Precision/Recall** | Balanced performance in fine-tuned models |
+| **Relevance Error** | 4.9x lower error (MAE: 6.98 → 1.43) |
+| **Response Length** | Baseline produces empty outputs, fine-tuned models consistent |
+| **Word Count** | Fine-tuned models: 6-7 words median vs baseline: 2-3 words |
+| **Statistical Heatmap** | Comprehensive view confirms superiority across all metrics |
+| **ROUGE Scores** | Significantly higher overlap with reference summaries |
+| **Output Consistency** | Lower variance in fine-tuned models |
+| **BERTScore** | 2x better semantic similarity (0.39 → 0.74) |
+
+**Overall Conclusion:** All 13 visualizations consistently demonstrate that fine-tuning is essential for this task, with both Tinker and Unsloth achieving production-quality results.
+
+---
+
+
 
 ## 🔄 Comparison with v1
 
