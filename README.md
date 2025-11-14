@@ -3,7 +3,6 @@
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=flat&logo=jupyter&logoColor=white)](https://jupyter.org/)
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-yellow)](https://huggingface.co/Truthseeker87)
 
 ---
@@ -117,7 +116,7 @@ This fine-tuned model serves as the "semantic layer" for the [News Analyst MCP A
 
 ### Annotation Methodology
 
-**Source:** TLDR AI Newsletter (Dec 2024 - Oct 2025)
+**Source:** AI industry news articles (Dec 2024 - Oct 2025)
 **Annotation Method:** Hand-annotated based on personal preferences and understanding of:
 - AI industry relevance
 - Key technological developments
@@ -458,12 +457,13 @@ print(result)
 
 ### Training Your Own Model
 
-See the [Jupyter Notebook](./llama_tinker_lora_news_enhancer_v2.ipynb) for complete training pipeline including:
-- Data preparation and formatting
-- LoRA configuration
-- Training with Tinker API or Unsloth
-- Evaluation and metrics calculation
-- Model export and deployment
+The complete training pipeline can be implemented using the published training data and configuration details documented in this README, including:
+- **Data preparation**: Use the provided `training_data/` files (364 train / 96 test examples)
+- **LoRA configuration**: See [Training Configuration](#-training-configuration) section for hyperparameters
+- **Training with Tinker API**: Upload `news_train_data.jsonl` to Tinker's fine-tuning API
+- **Training with Unsloth**: Use the formatted data in `news_train_data_formatted.jsonl`
+- **Evaluation**: Refer to `evaluation_results/` directory for metrics calculation methods
+- **Model export**: Both Tinker and Unsloth provide LoRA adapter export functionality
 
 ---
 
@@ -679,7 +679,7 @@ The project includes 13 comprehensive visualizations generated during evaluation
 4. **Statistical Rigor:** Hypothesis tests, effect sizes, confidence intervals
 5. **Comprehensive Evaluation:** 13 visualizations, 30+ metrics
 6. **Production Focus:** Debugging journey, train_on_responses_only fix
-7. **Better Documentation:** Verified against notebook, 95%+ accuracy
+7. **Better Documentation:** Comprehensive README with verified metrics and methodology
 
 ### Links
 
@@ -711,7 +711,7 @@ This section documents critical lessons learned from implementing and debugging 
 **Root Cause of Initial Failures:**
 - Unsloth's `train_on_responses_only()` searches for delimiter strings in the `'text'` field
 - If data has `'messages'` field instead, delimiters aren't found → loss masking fails → contamination
-- The formatting cell created an in-memory dataset that was lost between notebook restarts
+- The formatted dataset must be persisted to disk to ensure consistency across training sessions
 
 **Solution:**
 ```python
@@ -945,9 +945,9 @@ class JSONStoppingCriteria(StoppingCriteria):
 
 ### Related Documentation
 
-- **Jupyter Notebook:** [llama_tinker_lora_news_enhancer_v2.ipynb](./llama_tinker_lora_news_enhancer_v2.ipynb)
-- **Consolidated Documentation:** Available in repository
-- **Evaluation Results:** `./evaluation_results/` directory
+- **Training Data:** `./training_data/` directory (460 annotated examples)
+- **Evaluation Results:** `./evaluation_results/` directory (13 visualizations, metrics)
+- **Model Configurations:** Documented in [Training Configuration](#-training-configuration) section
 
 ### Project Links
 
@@ -1019,7 +1019,6 @@ If you use this work in your research or project, please cite:
 - **Unsloth Team** for the optimized fine-tuning library
 - **Hugging Face** for the transformers library and model hosting
 - **Google Colab** for free GPU access
-- **TLDR AI Newsletter** for providing high-quality AI news content
 
 ---
 
