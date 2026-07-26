@@ -46,10 +46,16 @@ This project presents a comprehensive evaluation of **LoRA fine-tuning approache
 ### 💡 Critical Insight
 
 **The baseline model completely fails at this task** (5.2% JSON validity, produces empty structured fields), proving that **LoRA fine-tuning is essential**, not just beneficial. Both fine-tuned models achieve:
-- ✅ **+162% quality improvement** over baseline (F1: 0.40 → 0.61)
-- ✅ **19x better JSON validity** (5% → 100%)
+- ✅ **19x better JSON validity** (5.2% → 100%)
 - ✅ **4.9x lower relevance error** (MAE: 6.98 → 1.43)
+- ✅ **+55% overall F1** (0.396 → 0.612), driven by **+242% F1 on key insights** (0.135 → 0.464)
 - ✅ **Production-ready reliability** for automated news analysis
+
+> **Note on interpreting these gains.** The baseline emits parseable JSON on only 5 of 96 test
+> examples; the remaining 91 are scored as empty structured fields. Those failures dominate the
+> baseline's F1 and MAE, so the improvements above measure **the acquisition of reliable
+> structured output**, which is precisely what the fine-tune is for — not a like-for-like
+> comparison of analytical judgement between two working models.
 
 ---
 
@@ -355,7 +361,7 @@ See [Section: Actual vs Recommended Settings](#actual-vs-recommended-settings) f
 | **F1 Company Names** | 0.656 | 0.761 | 0.772 | Unsloth |
 | **Jaccard Key Insights** | 0.135 | 0.363 | 0.333 | Tinker |
 | **Jaccard Company Names** | 0.656 | 0.750 | 0.759 | Unsloth |
-| **Exact Match Rate** | ~0% | ~15-25% | ~15-25% | Tie |
+| **Exact Match Rate** | 0.0% | 7.3% | 3.1% | Tinker |
 
 #### Semantic Quality Metrics
 
@@ -363,9 +369,11 @@ See [Section: Actual vs Recommended Settings](#actual-vs-recommended-settings) f
 |--------|----------|--------|---------|------|
 | **BERTScore F1** | 0.391 | 0.744 | 0.735 | Tinker |
 | **MAE (Relevance)** | 6.98 | 1.80 | 1.43 | Unsloth |
-| **R² (Relevance)** | -0.089 | 0.297 | 0.435 | Unsloth |
+| **Adjusted R² (Relevance)** | -4.27 | 0.18 | 0.44 | Unsloth |
 
-**Note:** Baseline BERTScore is low (0.391) because it produces empty/invalid outputs, not because of semantic understanding.
+**Note:** Baseline BERTScore is low (0.391) because it produces empty/invalid outputs, not because of semantic understanding. The same applies to its adjusted R² of -4.27: predicting a constant 0 for 91 of 96 examples fits far worse than the mean, which is what a large negative R² indicates.
+
+**Note on ROUGE/BERTScore scope:** these are computed over the full serialised response, not over the `summary` field alone. The reference annotations leave `summary` empty in ~92% of cases by design (the model's task is metadata tagging, not prose summarisation), so these two metrics should be read as measures of overall structural and lexical similarity to the reference JSON.
 
 #### Response Characteristics
 
@@ -407,7 +415,7 @@ See [Section: Actual vs Recommended Settings](#actual-vs-recommended-settings) f
 **Evidence:**
 - Baseline: 5.2% JSON validity, 0.396 F1, 6.98 MAE
 - Fine-tuned: 100% JSON validity, 0.61 F1, 1.43-1.80 MAE
-- **Improvement:** +162% F1, +19x JSON validity, +4.9x lower error
+- **Improvement:** 19x JSON validity, 4.9x lower relevance error, +55% overall F1 (+242% on key insights)
 
 **Why Baseline Fails:**
 ```python
@@ -444,7 +452,7 @@ See [Section: Actual vs Recommended Settings](#actual-vs-recommended-settings) f
 
 **Unsloth Advantages:**
 - ✅ Better relevance score accuracy (MAE: 1.43 vs 1.80)
-- ✅ Higher R² for relevance (0.435 vs 0.297)
+- ✅ Higher adjusted R² for relevance (0.44 vs 0.18)
 - ✅ Completely free (except compute)
 - ✅ Full control over training process
 
@@ -622,7 +630,7 @@ The project includes 13 comprehensive visualizations generated during evaluation
 
 ![F1 Score by Field](./evaluation_results/visualizations/f1_score_by_field_20251111_084543.png)
 
-**Key Insight:** Fine-tuned models show consistent improvement across all fields. Baseline struggles with all structured fields (F1 ~0.40), while fine-tuned models achieve F1 ~0.61.
+**Key Insight:** Fine-tuned models improve on every field, though not all gains reach significance at n=96. Key insights improve strongly and significantly (F1 0.135 → 0.464, p < 1e-8). Company names improve too (0.656 → 0.761), but the difference is **not statistically significant** (p = 0.096, power = 0.63) — the baseline already extracts company names reasonably well, and a larger test set would be needed to confirm a real gain there.
 
 ---
 
@@ -642,7 +650,7 @@ The project includes 13 comprehensive visualizations generated during evaluation
 
 ![Relevance Error Distribution](./evaluation_results/visualizations/relevance_error_distribution_20251111_084543.png)
 
-**Key Insight:** Baseline has MAE of 6.98 (terrible), while fine-tuned models achieve MAE of 1.43-1.80 (acceptable). Unsloth shows slightly better R² (0.435 vs 0.297).
+**Key Insight:** Baseline has MAE of 6.98 (terrible), while fine-tuned models achieve MAE of 1.43-1.80 (acceptable). Unsloth shows better adjusted R² (0.44 vs 0.18), though the MAE difference between the two fine-tuned models is not statistically significant (p = 0.126).
 
 ---
 
@@ -702,7 +710,7 @@ The project includes 13 comprehensive visualizations generated during evaluation
 
 ![ROUGE Scores Comparison](./evaluation_results/visualizations/rouge_scores_comparison_20251111_084543.png)
 
-**Key Insight:** Fine-tuned models achieve significantly higher ROUGE scores, indicating better overlap with reference summaries.
+**Key Insight:** Fine-tuned models achieve much higher ROUGE scores, indicating closer lexical overlap with the reference annotations. Note that ROUGE here is computed over the full serialised JSON response rather than the `summary` field alone, so it largely reflects structural fidelity — the baseline's low score follows from its 5.2% JSON validity.
 
 ---
 
@@ -860,7 +868,7 @@ class JSONStoppingCriteria(StoppingCriteria):
 
 **Why This Matters:**
 - Proved that fine-tuning was **necessary**, not just beneficial
-- Quantified the improvement: +162% quality gain (F1: 0.40 → 0.61)
+- Quantified the improvement: 19x JSON validity and +55% overall F1 (0.396 → 0.612)
 - Validated the entire approach before investing in production deployment
 
 **Recommendation:** Always include baseline evaluation to:
@@ -955,7 +963,7 @@ class JSONStoppingCriteria(StoppingCriteria):
 - Training Steps: 1000+
 - LoRA Rank: 32 (vs default 16)
 
-**Lesson:** Good results with standard settings, excellent results possible with tuning. The +162% improvement over baseline is real, regardless of hyperparameter optimization.
+**Lesson:** Good results with standard settings, excellent results possible with tuning. The improvement over baseline is large and statistically significant (p < 0.0001, Cohen's d = -0.71) regardless of hyperparameter optimization.
 
 ---
 
@@ -1142,7 +1150,26 @@ This project serves as a comprehensive case study for:
 
 ---
 
-**Last Updated:** November 13, 2025
+## 📝 Corrections
+
+The following figures were corrected on **July 26, 2026** after re-verification against the
+evaluation artifacts published in this repository. The underlying data, models, and evaluation
+code are unchanged — only the reported numbers were wrong.
+
+| Item | Previously stated | Corrected to | Cause |
+|------|-------------------|--------------|-------|
+| Headline improvement | +162% quality improvement (F1: 0.40 → 0.61) | **+55%** overall F1 (0.396 → 0.612) | The +162% did not correspond to the F1 values quoted beside it; the nearest matching figure was Jaccard on key insights (+168%). |
+| Exact Match Rate | ~15–25% (both fine-tuned models) | **7.3%** Tinker, **3.1%** Unsloth | Estimated rather than read from `three_model_quality_metrics_aggregated_*.json`. |
+| R² (Relevance) | -0.089 / 0.297 / 0.435 | **-4.27 / 0.18 / 0.44** (adjusted R²) | Only the Unsloth value matched the computed adjusted R²; the metric is now labelled correctly. |
+| "Consistent improvement across all fields" | — | Qualified | Company-name F1 improves but is **not** statistically significant (p = 0.096). |
+
+All p-values, Cohen's d values, JSON validity rates, F1/Jaccard tables, BERTScore, MAE, dataset
+counts, and the zero-train/test-leakage claim were re-checked and are **accurate as originally
+published**.
+
+---
+
+**Last Updated:** July 26, 2026
 **Version:** 2.0
 **Status:** Production-Ready ✅
 
