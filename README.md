@@ -9,7 +9,7 @@
 
 ## 🚀 Project Evolution: Pilot (v1) to Version 2
 
-> **This is Version 2** - A significant expansion and improvement over the pilot project
+> **This is Version 2**, the second iteration of the pilot project.
 
 ### 📈 Dataset Expansion: 4.5x Growth
 
@@ -22,13 +22,13 @@ This project represents the **second iteration** of fine-tuning Llama 3.2-1B for
 
 ### 🎯 Key Improvements in v2
 
-- ✅ **4.5x larger dataset** (101 → 460 examples) for more robust training
+- ✅ **4.5 times as many examples as v1** (101 to 460 examples)
 - ✅ **Three-model comparison** (Baseline, Tinker API, Unsloth) instead of single approach
 - ✅ **Comprehensive evaluation** with statistical significance testing
 - ✅ **Expanded documentation** of the methodology. The training notebook is not yet published.
 - ✅ **Valid JSON for all 96 test items** from both fine tuned models
 
-This expanded dataset enables more reliable fine-tuning and better generalization to diverse AI news content.
+This project uses a larger dataset than v1 and evaluates three models on a 96 item held out test set.
 
 
 ## 🎯 Executive Summary
@@ -45,16 +45,16 @@ This project presents a comprehensive evaluation of **LoRA fine-tuning approache
 
 ### 💡 Critical Insight
 
-**The baseline model completely fails at this task** (5.2% JSON validity, produces empty structured fields), proving that **LoRA fine-tuning is essential**, not just beneficial. Compared with the baseline, the fine tuned models show:
+**On this 96 item test set,** the baseline returned valid JSON for 5 items, while both LoRA fine tuned models returned valid JSON for all 96 items. Compared with baseline scores that treat invalid outputs as empty fields, the fine tuned models show:
 - ✅ **19x better JSON validity** (5.2% → 100%, both models)
 - ✅ **4.9x lower relevance error** (MAE: 6.98 → 1.43, Unsloth; 3.9 times for Tinker)
 - ✅ **+55% overall F1** (0.396 → 0.612, Tinker), driven by **+242% F1 on key insights** (0.135 → 0.464, Tinker)
 
 > **Note on interpreting these gains.** The baseline emits parseable JSON on only 5 of 96 test
-> examples; the remaining 91 are scored as empty structured fields. Those failures dominate the
-> baseline's F1 and MAE, so the improvements above measure **the acquisition of reliable
-> structured output**, which is precisely what the fine-tune is for. It is not a like for like
-> comparison of analytical judgment between two working models.
+> examples. The evaluation scores its remaining 91 outputs as empty structured fields. Those
+> failures dominate the baseline F1 and MAE. The differences above mainly measure valid
+> structured output on this test set. They do not compare analytical judgment between two
+> models that both produced valid JSON.
 
 ---
 
@@ -143,7 +143,7 @@ The agent configuration references the v1 adapter. It names the v1 Ollama model 
 
 ### Why LoRA Over Full Fine-Tuning
 
-I chose LoRA because it fits a free Colab T4 GPU, trains in minutes on 364 examples, and produces a small adapter. I did not run full fine tuning for comparison, so this project has no measured memory, storage, speed or quality comparison between LoRA and full fine tuning.
+I chose LoRA because it fit a free Colab T4 GPU and produced a separate adapter. The Unsloth run finished in minutes, but I did not measure Tinker wall clock training time. I did not run full fine tuning for comparison, so this project has no measured memory, storage, speed or quality comparison between LoRA and full fine tuning.
 
 Practical reasons for this project:
 - **Colab Compatibility**: Fits on a free tier T4 GPU
@@ -184,7 +184,7 @@ Tinker is a training API that lets you control every aspect of model training an
 
 #### Advantages
 
-- ✅ **Ready, managed infrastructure services** - No GPU management, hardware failures handled transparently, and abstraction of infrastructure complexity
+- ✅ **Managed infrastructure services:** Tinker handles GPU scheduling, resource allocation and failure recovery
 - ✅ **Low-rank adaptation (LoRA)** - Efficient fine-tuning by training small add-on modules instead of all weights
 - ✅ **Distributed training** - Automatic handling of training across multiple GPUs
 - ✅ **Flexible control** - Full control over training loop via simple API calls (`forward_backward()`, `optim_step()`, `sample()`, `save_state()`)
@@ -300,7 +300,7 @@ The `unsloth_models/model_metadata.json` file records warmup 22 and a cosine sch
 ### Why These Settings
 
 - **Small batch size (4):** Fits in Colab GPU constraints
-- **5 epochs (455 steps):** Sufficient for convergence on 364 examples
+- **5 epochs (455 steps):** The executed Unsloth run used this setting on 364 training examples
 - **2e-4 learning rate:** Standard for LoRA fine-tuning
 - **Linear scheduler:** Smooth learning rate decay for stability
 - **train_on_responses_only:** Prevents contamination from user prompts
@@ -325,7 +325,7 @@ The `unsloth_models/model_metadata.json` file records warmup 22 and a cosine sch
 | **Tinker** | 96/96 | 0/96 | **100%** ✅ |
 | **Unsloth** | 96/96 | 0/96 | **100%** ✅ |
 
-**Critical Finding:** Baseline model produces empty structured fields and cannot perform the task without fine-tuning.
+**Finding:** The baseline returned valid JSON for 5 of 96 test items. Both fine tuned models returned valid JSON for 96 of 96.
 
 #### Field-Level Quality Metrics
 
@@ -348,7 +348,7 @@ The `unsloth_models/model_metadata.json` file records warmup 22 and a cosine sch
 
 **Note:** Baseline BERTScore is low (0.391) because it produces empty/invalid outputs, not because of semantic understanding. The same applies to its adjusted R² of -4.27: predicting a constant 0 for 91 of 96 examples fits far worse than the mean, which is what a large negative R² indicates.
 
-**Note on ROUGE/BERTScore scope:** these are computed over the full serialised response, not over the `summary` field alone. The reference annotations leave `summary` empty in 88 of 96 test items, so these two metrics should be read as measures of overall structural and lexical similarity to the reference JSON.
+**Note on ROUGE/BERTScore scope:** these are computed over the full serialized response, not over the `summary` field alone. The reference annotations leave `summary` empty in 88 of 96 test items, so these two metrics should be read as measures of overall structural and lexical similarity to the reference JSON.
 
 #### Response Characteristics
 
@@ -385,7 +385,7 @@ The `unsloth_models/model_metadata.json` file records warmup 22 and a cosine sch
 
 ## 🔍 Key Findings
 
-### 1. LoRA Fine-Tuning is Essential for This Task
+### 1. LoRA Fine Tuning Improved Structured Output on This Test Set
 
 **Evidence:**
 - Baseline: 5.2% JSON validity, 0.396 F1, 6.98 MAE
@@ -403,7 +403,7 @@ The `unsloth_models/model_metadata.json` file records warmup 22 and a cosine sch
 }
 ```
 
-**Fine-Tuned Models Succeed (illustrative example, not a real model output):**
+**Illustrative Structured Output (not a real model output):**
 ```python
 # Fine-tuned models produce populated fields:
 {
@@ -417,12 +417,12 @@ The `unsloth_models/model_metadata.json` file records warmup 22 and a cosine sch
 }
 ```
 
-### 2. Tinker vs Unsloth: Comparable Performance
+### 2. Tinker vs Unsloth: No Significant Overall Difference Detected
 
 **Tinker Advantages:**
 - ✅ Slightly higher F1 for key insights (0.464 vs 0.435)
 - ✅ Better BERTScore (0.744 vs 0.735)
-- ✅ Easier setup (managed service)
+- ✅ Managed training service
 - ✅ No GPU management needed
 
 **Unsloth Advantages:**
@@ -532,7 +532,7 @@ The Hugging Face repository holds the training data, evaluation results, logs, a
 
 ### Evaluation Visualizations
 
-The project includes 13 comprehensive visualizations generated during evaluation. All visualizations are available in `./evaluation_results/visualizations/`.
+The project includes 13 visualization files generated during evaluation. They are available in `./evaluation_results/visualizations/`.
 
 ---
 
@@ -582,7 +582,7 @@ The project includes 13 comprehensive visualizations generated during evaluation
 
 ![Relevance Error Distribution](./evaluation_results/visualizations/relevance_error_distribution_20251111_084543.png)
 
-**Key Insight:** Baseline has MAE of 6.98 (terrible), while fine-tuned models achieve MAE of 1.43-1.80 (acceptable). Unsloth shows better adjusted R² (0.44 vs 0.18), though the MAE difference between the two fine-tuned models is not statistically significant (p = 0.126).
+**Key Insight:** Baseline MAE is 6.98, while the fine tuned model MAE values are 1.43 and 1.80. Unsloth has adjusted R² of 0.44 compared with 0.18 for Tinker. The MAE difference between the two fine tuned models is not statistically significant (p = 0.126).
 
 ---
 
@@ -622,17 +622,17 @@ The project includes 13 comprehensive visualizations generated during evaluation
 
 ![Response Length Histogram](./evaluation_results/visualizations/response_length_histogram_20251111_084543.png)
 
-**Key Insight:** Baseline responses cluster at very low character counts, while fine-tuned models show normal distributions around higher character counts.
+**Key Insight:** Baseline responses cluster at low character counts, while the fine tuned model responses cluster at higher character counts.
 
 ---
 
 ### 10. Statistical Summary Heatmap
 
-**Comprehensive metrics overview showing all evaluation metrics in a heatmap.**
+**Metrics overview showing the evaluation metrics in a heatmap.**
 
 ![Statistical Summary Heatmap](./evaluation_results/visualizations/statistical_summary_heatmap_20251111_084543.png)
 
-**Key Insight:** Visual summary of all metrics confirms fine-tuned models outperform baseline across all dimensions.
+**Key Insight:** The heatmap summarizes the recorded metrics. The fine tuned models have higher aggregate scores than the baseline on most displayed measures, but not every field level difference is statistically significant.
 
 ---
 
@@ -642,7 +642,7 @@ The project includes 13 comprehensive visualizations generated during evaluation
 
 ![ROUGE Scores Comparison](./evaluation_results/visualizations/rouge_scores_comparison_20251111_084543.png)
 
-**Key Insight:** Fine-tuned models achieve much higher ROUGE scores, indicating closer lexical overlap with the reference annotations. Note that ROUGE here is computed over the full serialised JSON response rather than the `summary` field alone, so it largely reflects structural fidelity. The baseline's low score follows from its 5.2% JSON validity.
+**Key Insight:** Fine-tuned models achieve much higher ROUGE scores, indicating closer lexical overlap with the reference annotations. Note that ROUGE here is computed over the full serialized JSON response rather than the `summary` field alone, so it largely reflects structural fidelity. The baseline's low score follows from its 5.2% JSON validity.
 
 ---
 
@@ -652,7 +652,7 @@ The project includes 13 comprehensive visualizations generated during evaluation
 
 ![Output Consistency Comparison](./evaluation_results/visualizations/output_consistency_comparison_20251111_084543.png)
 
-**Key Insight:** Fine-tuned models show lower coefficient of variation, indicating more consistent and reliable outputs.
+**Key Insight:** The fine tuned models have lower coefficients of variation for response length than the baseline.
 
 ---
 
@@ -704,10 +704,10 @@ The project includes 13 comprehensive visualizations generated during evaluation
 
 ### Key Improvements in v2
 
-1. **Larger Dataset:** 4.5x more examples for better generalization
-2. **Fair Comparison:** Controlled hyperparameters across Tinker and Unsloth
-3. **Baseline Inclusion:** Proves necessity of fine-tuning
-4. **Statistical Rigor:** Hypothesis tests, effect sizes, confidence intervals
+1. **Larger Dataset:** 4.5 times as many examples as v1
+2. **Matched LoRA Settings:** Both models used rank 32 and alpha 32; other training and evaluation details differed
+3. **Baseline Inclusion:** Quantified differences from the unadapted base model on the test set
+4. **Statistical Analysis:** Hypothesis tests, effect sizes and confidence intervals
 5. **Comprehensive Evaluation:** 13 visualizations, 30+ metrics
 6. **Debugging Journey:** train_on_responses_only fix and JSON stopping rule
 7. **Documentation:** README with metrics checked against the evaluation files (see [Corrections](#-corrections))
@@ -723,7 +723,7 @@ The project includes 13 comprehensive visualizations generated during evaluation
 
 ### Key Insights from the Fine-Tuning Journey
 
-This section documents critical lessons learned from implementing and debugging both Tinker API and Unsloth fine-tuning approaches, providing actionable insights for practitioners attempting similar projects.
+This section records lessons from implementing and debugging the Tinker API and Unsloth training approaches.
 
 ---
 
@@ -788,18 +788,18 @@ class JSONStoppingCriteria(StoppingCriteria):
 
 **Result:** Multiple JSONs 100% → 0% ✅
 
-**Lesson:** Structure-aware stopping criteria are essential for structured output generation.
+**Lesson:** The custom brace counting stopping rule prevented extra JSON objects in the Unsloth evaluation.
 
 ---
 
-### 3. ✅ Baseline Comparison is Essential
+### 3. ✅ Baseline Comparison Quantified the Test Set Difference
 
-**Critical Finding:** The untrained baseline model completely failed (5.2% JSON validity)
+**Finding:** The unadapted baseline returned valid JSON for 5 of 96 test items.
 
 **Why This Matters:**
-- Proved that fine-tuning was **necessary**, not just beneficial
-- Quantified the improvement: 19x JSON validity and +55% overall F1 (0.396 → 0.612)
-- Validated the approach before further work
+- Showed that both LoRA fine tuned models produced valid JSON more often than the baseline on this test set
+- Quantified the difference as 19 times the JSON validity and 55% higher overall F1 for Tinker (0.396 to 0.612)
+- Established a baseline for future comparisons
 
 **Recommendation:** Always include baseline evaluation to:
 - Quantify improvement magnitude
@@ -808,7 +808,7 @@ class JSONStoppingCriteria(StoppingCriteria):
 
 ---
 
-### 4. 🏆 Both Approaches Reach Similar Quality on This Test Set
+### 4. 🏆 No Significant Overall F1 or Relevance MAE Difference Detected
 
 **Comparative Results:**
 
@@ -818,11 +818,11 @@ class JSONStoppingCriteria(StoppingCriteria):
 | **JSON Validity** | 100% | 100% | Both 96 of 96 |
 | **MAE (Relevance)** | 1.80 | 1.43 | p=0.126 (no significant difference) |
 
-**Key Insight:** No statistically significant difference in quality (p=0.698)
+**Key Insight:** The test found no statistically significant difference in overall F1 (p = 0.698) or relevance MAE (p = 0.126).
 
 **Training time is not comparable.** I did not measure Tinker wall clock training time, and it needs a rerun. The Tinker log records time per step, not a total, and the run saved a checkpoint after every step. The Unsloth artifacts record two different runs: 3 minutes 39 seconds in the notebook output and 4.91 minutes in `unsloth_models/model_metadata.json`. I have not confirmed which run produced the evaluated model.
 
-**Recommendation:** Choose based on infrastructure preferences, not performance:
+**The recorded test metrics do not establish a preferred framework. Infrastructure differences include:**
 - **Tinker API:** Managed service with built in step logging
 - **Unsloth:** Local control on a free Colab GPU
 
@@ -842,7 +842,7 @@ class JSONStoppingCriteria(StoppingCriteria):
 
 ---
 
-### 6. 🔬 Comprehensive Evaluation Prevents Overfitting
+### 6. 🔬 Multi Metric Evaluation
 
 **Multi-Metric Approach:**
 - **JSON Validity:** Structural correctness (100% for both fine-tuned models)
@@ -856,14 +856,14 @@ class JSONStoppingCriteria(StoppingCriteria):
 - Different metrics reveal different aspects of model behavior
 - Several metrics together give a fuller picture than one metric
 
-**Recommendation:** Use multiple complementary metrics to assess model quality and avoid overfitting to a single metric.
+**Recommendation:** Use multiple complementary metrics to describe different aspects of test set performance.
 
 ---
 
 ### 7. 📝 Training Logging: Framework Differences
 
 **Tinker API:**
-- ✅ Comprehensive built-in logging to `metrics.jsonl`
+- ✅ Records loss, learning rate, token counts and timing in `metrics.jsonl`
 - ✅ Logs every step: loss, learning rate, tokens, timing
 - ❌ Weights & Biases NOT needed
 
@@ -884,7 +884,7 @@ class JSONStoppingCriteria(StoppingCriteria):
 - Learning Rate: 2e-4 (standard LoRA)
 - Batch Size: 4
 - Training Steps: 455 (5 epochs)
-- Results: Good performance (F1 0.61)
+- Results: Overall F1 0.603 for Unsloth and 0.612 for Tinker on the held out test set
 
 **Untested Ideas:** a higher learning rate, a larger effective batch size and more steps. Both models already used LoRA rank 32.
 
@@ -896,9 +896,9 @@ class JSONStoppingCriteria(StoppingCriteria):
 
 - ✅ 80/20 split (364 train / 96 test), not temporal
 - ✅ `train_on_responses_only` masking - eliminated contamination
-- ✅ Standard LoRA learning rate (2e-4) - produced good results
-- ✅ Small batch size (4) - sufficient for convergence
-- ✅ 5 epochs (455 steps) - adequate for this dataset size
+- ✅ Standard LoRA learning rate (2e-4), used in both executed runs
+- ✅ Small batch size (4), used in the executed Unsloth run
+- ✅ 5 epochs (455 steps), used in the executed Unsloth run
 - ✅ Three-model comparison on one held out test set
 
 ### Opportunities for Improvement
@@ -915,10 +915,10 @@ class JSONStoppingCriteria(StoppingCriteria):
 
 1. **Data formatting is framework-specific** - verify compatibility and persist formatted data
 2. **Debugging requires systematic investigation** - from 100% contamination to 0% through structured problem-solving
-3. **Baseline comparison is essential** - quantifies improvement and validates approach
-4. **Tinker and Unsloth reach similar quality on this test set** - choose based on infrastructure needs
+3. **Baseline comparison quantifies the observed test set differences**
+4. **Tinker and Unsloth showed no statistically significant difference in overall F1 or relevance MAE on this test set**
 5. **Dataset size matters** - the 4.5x expansion enabled a 96 item test set
-6. **Multiple metrics prevent overfitting** - comprehensive evaluation builds confidence
+6. **Multiple metrics describe different aspects of test set performance**
 7. **Training logging varies by framework** - plan accordingly
 8. **Hyperparameter tuning is untested** - results above use standard settings
 
@@ -1068,10 +1068,10 @@ If you find this project useful, please consider giving it a star! ⭐
 
 ## 🎓 Educational Value
 
-This project serves as a comprehensive case study for:
+This project documents:
 - **LoRA Fine-Tuning:** Practical implementation with real-world data
-- **Model Comparison:** Fair evaluation of managed vs local training
-- **Statistical Rigor:** Proper hypothesis testing and effect size analysis
+- **Model Comparison:** Evaluation of managed and local LoRA training on the same 96 item test set
+- **Statistical Analysis:** Reported hypothesis tests, effect sizes and confidence intervals
 - **Documentation:** Published corrections when figures did not match the evaluation files
 
 ---
@@ -1106,6 +1106,7 @@ I corrected the following items on **November 20, 2026** after I rechecked this 
 | Tinker client example | `TinkerClient` and `pip install tinker-client` | Pointer to the Tinker docs | The notebook uses `tinker.ServiceClient`. |
 | Generalization claims | Human level performance, not memorization | Removed | No human baseline or memorization test exists. |
 | Status | Production-Ready, production quality, production-ready reliability | Removed | No deployment of a v2 model supports these statements. |
+| Interpretation claims | LoRA fine tuning is essential; Tinker and Unsloth have comparable performance; comprehensive evaluation prevents overfitting; 5 epochs sufficient for convergence | Stated as results on this test set only | The test compared one unadapted base model with two LoRA models on one test set. A difference that is not statistically significant does not show equal performance. No validation set was used. |
 | Broken links | News-Analyst-MCP-Agent repository; tinker.thinkingmachin.es; internal settings anchor | Removed or replaced | The repository is private, the domain fails, and the anchor had no heading. |
 
 I rechecked the dataset counts, the JSON validity counts, the F1, Jaccard, BERTScore, MAE and adjusted R squared values, the p values, the Cohen's d values and both LoRA configurations against the published evaluation files, adapter configurations and the training notebook.
