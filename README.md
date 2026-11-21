@@ -740,7 +740,7 @@ This section records lessons from implementing and debugging the Tinker API and 
 
 **Root Cause of Initial Failures:**
 - Unsloth's `train_on_responses_only()` searches for delimiter strings in the `'text'` field
-- If data has `'messages'` field instead, delimiters aren't found → loss masking fails → contamination
+- If data has `'messages'` field instead, delimiters are not found → loss masking fails → contamination
 - The formatted dataset must be persisted to disk to ensure consistency across training sessions
 
 **Solution:**
@@ -773,9 +773,9 @@ generated_text = tokenizer.decode(outputs[0][input_length:], skip_special_tokens
 
 **Fix #2: Stopping Criteria → Eliminated Multiple JSONs**
 
-**Root Cause:** EOS tokens don't understand JSON structure
+**Root Cause:** EOS tokens do not understand JSON structure
 - Tried `eos_token_id=[128001, 128009]` → Failed (100% contamination)
-- EOS tokens signal "end of response" but can't detect closing braces `}`
+- EOS tokens signal "end of response" but cannot detect closing braces `}`
 
 **Solution:** Custom stopping criteria with JSON structure awareness
 ```python
