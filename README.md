@@ -156,7 +156,7 @@ Practical reasons for this project:
 - Llama 3.2 1B base model (`meta-llama/Llama-3.2-1B`, not the Instruct version), with no fine tuning
 - Control group to establish task difficulty
 - Uses raw model inference without adaptation
-- **Purpose**: Demonstrate necessity of fine-tuning
+- **Purpose**: Establish a baseline for this test set comparison
 
 #### 2. **Tinker API** (Managed LoRA Fine-Tuning)
 - Thinking Machines' cloud-based fine-tuning service
@@ -216,7 +216,7 @@ Tinker is a training API that lets you control every aspect of model training an
 
 #### What is Unsloth?
 
-Unsloth is an open source fine tuning framework. Unsloth states that it trains about 2 times faster with 70% less VRAM and no accuracy loss ([Unsloth docs](https://unsloth.ai/docs)). I did not test these claims. It works with the Hugging Face ecosystem (transformers, PEFT, TRL).
+Unsloth is an open source fine tuning framework. Unsloth states that it trains about 2 times faster with 70% less VRAM ([Unsloth docs](https://unsloth.ai/docs)). I did not test these claims. It works with the Hugging Face ecosystem (transformers, PEFT, TRL).
 
 #### How Does It Work?
 
