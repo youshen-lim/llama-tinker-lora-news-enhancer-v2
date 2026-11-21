@@ -996,7 +996,7 @@ class JSONStoppingCriteria(StoppingCriteria):
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License, which covers the files in this repository. The [Llama 3.2 Community License](https://huggingface.co/meta-llama/Llama-3.2-1B) governs the Llama 3.2 base model (`meta-llama/Llama-3.2-1B`).
 
 ```
 MIT License
@@ -1108,6 +1108,7 @@ I corrected the following items on **November 20, 2026** after I rechecked this 
 | Status | Production-Ready, production quality, production-ready reliability | Removed | No deployment of a v2 model supports these statements. |
 | Interpretation claims | LoRA fine tuning is essential; Tinker and Unsloth have comparable performance; comprehensive evaluation prevents overfitting; 5 epochs sufficient for convergence | Stated as results on this test set only | The test compared one unadapted base model with two LoRA models on one test set. A difference that is not statistically significant does not show equal performance. No validation set was used. |
 | Broken links | News-Analyst-MCP-Agent repository; tinker.thinkingmachin.es; internal settings anchor | Removed or replaced | The repository is private, the domain fails, and the anchor had no heading. |
+| License (November 21, 2026) | MIT License only | MIT License for the repository files; Llama 3.2 Community License for the Llama 3.2 base model | The README did not name the license of the base model. |
 
 I rechecked the dataset counts, the JSON validity counts, the F1, Jaccard, BERTScore, MAE and adjusted R squared values, the p values, the Cohen's d values and both LoRA configurations against the published evaluation files, adapter configurations and the training notebook.
 
