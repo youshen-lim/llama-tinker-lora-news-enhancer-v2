@@ -1109,6 +1109,9 @@ I corrected the following items on **November 20, 2026** after I rechecked this 
 | Interpretation claims | LoRA fine tuning is essential; Tinker and Unsloth have comparable performance; comprehensive evaluation prevents overfitting; 5 epochs sufficient for convergence | Stated as results on this test set only | The test compared one unadapted base model with two LoRA models on one test set. A difference that is not statistically significant does not show equal performance. No validation set was used. |
 | Broken links | News-Analyst-MCP-Agent repository; tinker.thinkingmachin.es; internal settings anchor | Removed or replaced | The repository is private, the domain fails, and the anchor had no heading. |
 | License (November 21, 2026) | MIT License only | MIT License for the repository files; Llama 3.2 Community License for the Llama 3.2 base model | The README did not name the license of the base model. |
+| Baseline purpose (November 21, 2026) | Demonstrate necessity of fine-tuning | Establish a baseline for this test set comparison | The November 20, 2026 corrections limit the interpretation claims to this test set. |
+| Unsloth vendor claims (November 21, 2026) | Unsloth states about 2 times faster, 70% less VRAM and no accuracy loss | Unsloth states about 2 times faster and 70% less VRAM | I did not test the accuracy claim. |
+| Tinker adapter base model ID (November 21, 2026) | `base_model_name_or_path` empty (`null`) in `tinker_models/lora_adapter/adapter_config.json` | `unsloth/Llama-3.2-1B`, an ungated mirror of `meta-llama/Llama-3.2-1B` | The empty value names no base model. Only this field changed. |
 
 I rechecked the dataset counts, the JSON validity counts, the F1, Jaccard, BERTScore, MAE and adjusted R squared values, the p values, the Cohen's d values and both LoRA configurations against the published evaluation files, adapter configurations and the training notebook.
 
@@ -1129,6 +1132,6 @@ published**.
 
 ---
 
-**Last Updated:** November 20, 2026
+**Last Updated:** November 21, 2026
 **Version:** 2.0
 
